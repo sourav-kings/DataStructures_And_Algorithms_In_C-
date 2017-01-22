@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C_Sharp", "C_Sharp", "{1B694160-E0C3-448C-B079-88808D886A31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group_Anagrams", "Group_Anagrams\Group_Anagrams.csproj", "{C08B193D-14A8-4BFF-8E73-CD11218BB780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "postorder_from_inorder_preorder", "postorder_from_inorder_preorder\postorder_from_inorder_preorder.csproj", "{1D70C4EE-B905-4914-BF95-1A15DCE4119D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuts_And_Bolts", "Nuts_And_Bolts\Nuts_And_Bolts.csproj", "{AE0F31C5-66D5-4729-B658-9D810D8DAFC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Closest_elements_to_value", "Closest_elements_to_value\Closest_elements_to_value.csproj", "{69F83FD2-D899-46B5-AE6C-6B9C816E36BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distance_Between_TwoNodes_BinaryTree", "Distance_Between_TwoNodes_BinaryTree\Distance_Between_TwoNodes_BinaryTree.csproj", "{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C08B193D-14A8-4BFF-8E73-CD11218BB780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08B193D-14A8-4BFF-8E73-CD11218BB780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08B193D-14A8-4BFF-8E73-CD11218BB780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08B193D-14A8-4BFF-8E73-CD11218BB780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D70C4EE-B905-4914-BF95-1A15DCE4119D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D70C4EE-B905-4914-BF95-1A15DCE4119D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D70C4EE-B905-4914-BF95-1A15DCE4119D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D70C4EE-B905-4914-BF95-1A15DCE4119D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0F31C5-66D5-4729-B658-9D810D8DAFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0F31C5-66D5-4729-B658-9D810D8DAFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0F31C5-66D5-4729-B658-9D810D8DAFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0F31C5-66D5-4729-B658-9D810D8DAFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F83FD2-D899-46B5-AE6C-6B9C816E36BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F83FD2-D899-46B5-AE6C-6B9C816E36BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F83FD2-D899-46B5-AE6C-6B9C816E36BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F83FD2-D899-46B5-AE6C-6B9C816E36BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C08B193D-14A8-4BFF-8E73-CD11218BB780} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{1D70C4EE-B905-4914-BF95-1A15DCE4119D} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{AE0F31C5-66D5-4729-B658-9D810D8DAFC0} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{69F83FD2-D899-46B5-AE6C-6B9C816E36BB} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020} = {1B694160-E0C3-448C-B079-88808D886A31}
+	EndGlobalSection
+EndGlobal
