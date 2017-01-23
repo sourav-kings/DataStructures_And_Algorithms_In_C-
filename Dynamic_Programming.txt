@@ -1,0 +1,6 @@
+assembly line problem
+http://www.geeksforgeeks.org/dynamic-programming-set-34-assembly-line-scheduling/
+
+
+Knapsack Problem
+http://www.geeksforgeeks.org/dynamic-programming-set-10-0-1-knapsack-problem/

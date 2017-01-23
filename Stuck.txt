@@ -1,0 +1,6 @@
+Given a sorted array find the number of BSTs you can form
+
+
+Given millions of files process them sequentially in multiple stages and make sure it has good scalabilty, error handling, 
+elegantly handles changes to the system. etc.
+
