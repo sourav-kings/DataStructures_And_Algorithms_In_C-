@@ -15,6 +15,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Closest_elements_to_value",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distance_Between_TwoNodes_BinaryTree", "Distance_Between_TwoNodes_BinaryTree\Distance_Between_TwoNodes_BinaryTree.csproj", "{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{4A839044-2698-4339-8975-5DE93A1A9A85}"
+	ProjectSection(SolutionItems) = preProject
+		Info.txt = Info.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level_Order_Tree_Traversal", "Level_Order_Tree_Traversal\Level_Order_Tree_Traversal.csproj", "{C8B23725-5AD5-4E30-AE5F-10912ADFBE41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestChain_Length_To_Reach_TargetWord", "ShortestChain_Length_To_Reach_TargetWord\ShortestChain_Length_To_Reach_TargetWord.csproj", "{389E7BCC-3A5E-4F28-B4FF-E8095AB53E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree_Subtree_Of_Another_BinaryTree", "BinaryTree_Subtree_Of_Another_BinaryTree\BinaryTree_Subtree_Of_Another_BinaryTree.csproj", "{05DBBB30-1D67-4803-B72F-C765BFC86F0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +52,18 @@ Global
 		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B23725-5AD5-4E30-AE5F-10912ADFBE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B23725-5AD5-4E30-AE5F-10912ADFBE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B23725-5AD5-4E30-AE5F-10912ADFBE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B23725-5AD5-4E30-AE5F-10912ADFBE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389E7BCC-3A5E-4F28-B4FF-E8095AB53E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389E7BCC-3A5E-4F28-B4FF-E8095AB53E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389E7BCC-3A5E-4F28-B4FF-E8095AB53E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389E7BCC-3A5E-4F28-B4FF-E8095AB53E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DBBB30-1D67-4803-B72F-C765BFC86F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DBBB30-1D67-4803-B72F-C765BFC86F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DBBB30-1D67-4803-B72F-C765BFC86F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DBBB30-1D67-4803-B72F-C765BFC86F0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +74,9 @@ Global
 		{AE0F31C5-66D5-4729-B658-9D810D8DAFC0} = {1B694160-E0C3-448C-B079-88808D886A31}
 		{69F83FD2-D899-46B5-AE6C-6B9C816E36BB} = {1B694160-E0C3-448C-B079-88808D886A31}
 		{EEE93870-B37E-43C0-9FBC-B9B1C1AEC020} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{4A839044-2698-4339-8975-5DE93A1A9A85} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{C8B23725-5AD5-4E30-AE5F-10912ADFBE41} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{389E7BCC-3A5E-4F28-B4FF-E8095AB53E34} = {1B694160-E0C3-448C-B079-88808D886A31}
+		{05DBBB30-1D67-4803-B72F-C765BFC86F0D} = {1B694160-E0C3-448C-B079-88808D886A31}
 	EndGlobalSection
 EndGlobal

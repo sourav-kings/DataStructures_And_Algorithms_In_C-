@@ -1,0 +1,6 @@
+Design a system where a buyer puts a notification to the social networking site about his transaction
+
+Design a cab service system, how would you define the standerds to be ahead of your customers, how to handle scalability issue
+
+Design an Email client. should be having all features of email-client.
+
