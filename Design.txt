@@ -1,8 +1,27 @@
 Design a system where a buyer puts a notification to the social networking site about his transaction
 
+
 Design a cab service system, how would you define the standerds to be ahead of your customers, how to handle scalability issue
+
 
 Design an Email client. should be having all features of email-client.
 
+
 design online cab booking system for amazon. design High Level diagram for it.
+
+
+Design ATM
+
+
+Design Car Service center
+—- Deep dive into design and focus on specific modue called ‘Service’
+—- Supervisor should be able to allot a Best Engineer to Service customer request, How do you code to get best engineer 
+to fix the car service request.
+
+
+ Implement my own Connection pooling
+
+
+ Identify all possble entities/domain objects in Cricket.
+
 

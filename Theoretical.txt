@@ -1,5 +1,9 @@
-BFS vs DFS
+﻿BFS vs DFS
 
 singleton pattern
 
 abstract class and its uses
+
+
+Given Channel, Program and TRP ratings, How do you consume those at server side,
+and what do you do to retrieve specific data like 1Get all programs in given channel where TRP is > 10′.
