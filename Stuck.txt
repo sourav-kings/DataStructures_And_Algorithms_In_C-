@@ -4,3 +4,33 @@ Given a sorted array find the number of BSTs you can form
 Given millions of files process them sequentially in multiple stages and make sure it has good scalabilty, error handling, 
 elegantly handles changes to the system. etc.
 
+Two colors are given(yellow, blue), we have to color such that no consecutive blue color is painted
+
+
+How class is loading in JVM:- Discussed about eden, perm space. using graph and BSF & DFS
+
+
+You are given a linked list.
+for i=1 to n/2, subtract (n-i)th number from ith number. Print modified linked list in the end.
+
+
+Given three numbers A, B and M. Calculate (A*B)%M. All numbers are in a range of 1 to 10^15 so prevent overflow. 
+First I gave brute force approach for running a loop A times, each time adding B to the answer and taking the mod. 
+Then, I improved from O(n) to O(logn) by calculating A*B/2 recursively and multiplying it by 2. 
+
+
+You are given an array of contacts. Each contact consists 3 strings: name, email and phone number. 
+If any of these parameters match with any other contact’s parameter then these 2 contacts are same.
+
+
+ A chess problem. I am given initial positions of 8 pawns and a knight. 
+ You have to answer whether I can remove all 8 pawns using my knight
+
+
+ Position of rightmost set bit
+
+
+ size of largest plus pattern in given 2D mattrix which has only 0s &1s.
+
+
+ Find the smallest window in a string containing all characters of another string

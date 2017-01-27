@@ -25,3 +25,7 @@ to fix the car service request.
  Identify all possble entities/domain objects in Cricket.
 
 
+ Design elevator in OO perspective.
+
+
+ Design Chess game.
