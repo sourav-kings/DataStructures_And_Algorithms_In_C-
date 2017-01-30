@@ -29,3 +29,15 @@ to fix the car service request.
 
 
  Design Chess game.
+
+
+ Design recommendation engine
+
+
+ You have a 13 floor building and it has 6 lifts in it, you have to design an algorithm such that 
+ if a user click the lift button, any of the available lift should reach to him in minimal time
+
+
+ Design for top k trends of twitter of facebook
+
+

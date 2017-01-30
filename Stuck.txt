@@ -33,4 +33,26 @@ If any of these parameters match with any other contact’s parameter then these 2
  size of largest plus pattern in given 2D mattrix which has only 0s &1s.
 
 
- Find the smallest window in a string containing all characters of another string
+ Find the smallest window in a string containing all characters of another string.
+
+
+ Maximum of all subarrays of size k (http://www.geeksforgeeks.org/maximum-of-all-subarrays-of-size-k/)
+
+
+ Find the first non-zero digit starting from right in n! Simply keep the last digit of every multiplication,
+
+
+ _Kth_SmallestElement_In_RowColumnWise_Sorted2DArray
+ https://discuss.leetcode.com/topic/52948/share-my-thoughts-and-clean-java-code
+ http://www.geeksforgeeks.org/kth-smallest-element-in-a-row-wise-and-column-wise-sorted-2d-array-set-1/
+
+
+ There is a given data with time and number of orders at that time and it will random. 
+ Then there will be a query of how many orders placed between a given interval of time.
+
+
+ There given a list of strings out which we have to print the unique strings. 
+ Unique string is a string which is not repeated.
+
+
+ DistinctPermutations_Of_String

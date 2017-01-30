@@ -13,3 +13,10 @@ Time complexity of Binary Tree: Searching, Inserting
 
 
 Questions on Sorting and Searching algorithms complexity
+
+
+process scheduling algorithms and then he asked me how will you allocate memory to a newly formed file
+
+ topological sorting , LRU cache implementation , Boxing stack problem
+
+ Quick sort
