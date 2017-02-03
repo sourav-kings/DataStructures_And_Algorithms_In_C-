@@ -29,7 +29,9 @@ to fix the car service request.
 
 
  Design Chess game.
-
+Ex. four classes like – pieces, board, clock, player and game. 
+ identify the attributes and functions of each of the class and 
+ how they interact with each with other.
 
  Design recommendation engine
 
@@ -40,4 +42,18 @@ to fix the car service request.
 
  Design for top k trends of twitter of facebook
 
+
+ Suppose there is a social networking site like Facebook. Every user gets some friend recommendations 
+ (i.e. People you may know!). Now, if there is a user A and he has 100 friends and each of his friends 
+ has got 5 other friends,A can get these 500 recommendations. But the condition is that he should only 
+ get the top 10 recommendations with whom he has the maximum number of mutual friends(If A and B are 
+ friends and B and C are friends, then A and C have a mutual friend, B). Suggest an efficient 
+ data structure for this and how to implement it. The implementation should be flexible as at any moment, 
+ any user can make new friends and he may also unfriend someone
+
+
+ Design parking system
+
+
+ Design notification system
 

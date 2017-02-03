@@ -20,3 +20,38 @@ process scheduling algorithms and then he asked me how will you allocate memory 
  topological sorting , LRU cache implementation , Boxing stack problem
 
  Quick sort
+
+ paging and segmentation concepts
+
+ what is virtual memory?y is it so called?size of virtual memory.
+
+ applications of graph.
+
+ Applications of heap. Insertion in a heap ( insertion of strings in a heap, 
+ priority is decided lexicographically). Time complexity of insertion.
+
+ Scheduling Algorithms, Threads and Time Complexity. Operating Systems.
+
+  small questions related to quick sort, heaps, hashing, time complexity for various algorithms.
+
+What are different phases in Compiler? 4 phases of Compiler: Lexical Analyzer, Syntax Analyzer, Semantic Analyzer, 
+
+What is Threading?
+Why thread better then process?
+What is thrashing?
+
+OS Page fault, Waiting time (RR Scheduling), Paging, Semaphores, etc.
+Process and Threads, Process Scheduling, Mutex and Semaphores and Memory Management.
+a) Difference between process and thread.
+b) Advantages and disadvantages of using threads.
+c) Difference b/w Scheduler and Dispatcher.
+d) Name all the process scheduling algos and explain the Round Robin Process Scheduling.
+e) At max how many threads can be active at a time in a machine?
+f) What is race condition and how do we avoid it?
+g) Difference between Semaphores and Mutex?
+h) What is secondary memory and why do we use it?
+i) What is thrashing?
+a) Explain OSI reference model and write all the layers present in this model along with the protocols used at each layer.
+b) Difference between TCP and UDP.
+
+

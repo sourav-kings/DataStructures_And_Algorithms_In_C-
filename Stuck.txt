@@ -1,4 +1,4 @@
-Given a sorted array find the number of BSTs you can form
+﻿Given a sorted array find the number of BSTs you can form
 
 
 Given millions of files process them sequentially in multiple stages and make sure it has good scalabilty, error handling, 
@@ -20,7 +20,7 @@ Then, I improved from O(n) to O(logn) by calculating A*B/2 recursively and multi
 
 
 You are given an array of contacts. Each contact consists 3 strings: name, email and phone number. 
-If any of these parameters match with any other contact�s parameter then these 2 contacts are same.
+If any of these parameters match with any other contact’s parameter then these 2 contacts are same.
 
 
  A chess problem. I am given initial positions of 8 pawns and a knight. 
@@ -56,3 +56,38 @@ If any of these parameters match with any other contact�s parameter then these 2
 
 
  DistinctPermutations_Of_String
+
+ We are receiving a stream of data from a social network, how will you display k max persons based on number of friends
+
+ Find level with maximum nodes on binary tree
+
+ Addition of infinite size of integer
+
+Given an array of string and array of characters find the string with atleast one and the most occurence of all 
+characters in array of characters.If there is tie print first occuring string.
+eg:vector<string> = {“abcda”, “aaaaaaa”, “abcc”}           vector<char> = {‘a’, ‘b, ‘c’};
+
+Given n points in 2 d space and two functions JOIN(A,B) and istransitvelyconnected(A,B).
+Join assigns A,B to same set while istransitvelyconnected(A,B) checks wether belong to same set.
+Solved using disjoint set using path compression
+
+ Given an infinite string defined by function f(x)=x+”0″+f(complement x) find k’th bit
+
+
+ A music player has N songs , you have a random number generator rand(n) which generates a 
+ number from [0,n-1] .Your task is to play a random song from given N songs such that each 
+ song is played once and your program should terminate once you have played all the songs.
+
+
+ A person has to cross a road and with each step he either gains some energy or loses some 
+ (this info is provided as an array) . Find out the min amount of energy he should start with so 
+  at any level his energy is not less than 1 ).
+Simple question done in O(n).
+
+How to solve (a*b)%m , where all a,b,m are of the order 10^15. Modulo’s distributive property is one thing .
+1st approach suggested was breaking the no’s to binary as solving 
+for eg:- [ ( 2^5 + 2^3 + 2^0) * (2^5) ] % [(2^3 + 2^2 + 2^0)] is feasible, but he wanted faster approach.
+
+Caches.
+tell different page replacement policies.
+Priority Queues, its internal implementation and complexities.
