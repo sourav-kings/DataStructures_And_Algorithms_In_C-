@@ -55,3 +55,54 @@ a) Explain OSI reference model and write all the layers present in this model al
 b) Difference between TCP and UDP.
 
 
+Caches.
+tell different page replacement policies.
+Priority Queues, its internal implementation and complexities.
+
+Which of the following sorting algorithms have worst case nlogn complexity?
+Ans:merge sort,heap sort.
+
+Number of child process created when fork() system call is called n times?
+
+The average time taken for searching an element in an array using linear search assuming that the searched 
+element is always present in the array? Ans: (n+1)/2
+
+You will be given array ,you have to find out which of them represents a max/min heap?
+
+
+ You are two traversals of a binary tree,,you have to find out the asked traversal? For ex: Inorder=4, 8, 10, 12, 14, 20, 22. 
+ Level order=20, 8, 22, 4, 12, 10, 14 Find preoreder? Ans:20,8,4,12,10,14,22
+
+ You are given a binary search tree and a key time taken for the Searching given key? 
+ Ans:O(log(n)) worst case for balanced BST O(n) worst case for Normal BST 
+ (this case occurs for left/right skewed trees).
+
+
+ You are given a string let say “saideep” ,s-1,a-1,i-1,e-2,d-1,p-1 is the frequency of each character.
+ VALUE of the string is defined as sum of squares of count of each distinct character.
+ value of above string is 1+1+1+1+4=8; 
+ Your task is to minimize the strings VALUE of the string after removal of ‘k’ characters.
+Ans: Its a straight forward question where you take a 256 array to store frequency of each character ,
+for k times you find a maximum frequency character and decrements its frequency by 1. 
+After k iterations print the VALUE function you get by remaining characters.
+
+
+ Difference between trigger and stored procedure?
+ Difference between thread and process?
+ Define deadlock and race condition?
+ How deadlock is detected?
+What is resource allocation graph and how its related to deadlock,what are the nodes in that graph?
+ He asked me what all the data structures i know and give their real time examples?
+ Indexing in DBMS
+ Types of indexes
+ How indexing is done in DB(b-tree and b+trees)
+ Views ,types of views its advantages
+
+
+ You will be given a floor say(m*n) dimensions and sub rectangles that can fit inside the big rectangle..you have to print the floor plan for given dimensions of small sub rectangles.
+He explained me that it requires construction of SLICING TREE and then printing floor plan. He asked which all the data structures you will use to construct it and asked me think of it.
+
+Ans: I gave him an stack/queue based approach .I told him that i’ll sort the sub rectangles by lengths/breadths and push them in stack in d=increasing order. .he was very much satisfied with my algorithm and asked me to code it
+
+
+What all data structures you know.Give the real life examples of when can we use them

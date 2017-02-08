@@ -1,4 +1,9 @@
-﻿Given a sorted array find the number of BSTs you can form
+﻿"Lastly, just memorising algorithms won’t do any good. One has to learn the art of developing logic of a problem."
+
+
+
+
+Given a sorted array find the number of BSTs you can form
 
 
 Given millions of files process them sequentially in multiple stages and make sure it has good scalabilty, error handling, 
@@ -88,6 +93,49 @@ How to solve (a*b)%m , where all a,b,m are of the order 10^15. Modulo’s distri
 1st approach suggested was breaking the no’s to binary as solving 
 for eg:- [ ( 2^5 + 2^3 + 2^0) * (2^5) ] % [(2^3 + 2^2 + 2^0)] is feasible, but he wanted faster approach.
 
-Caches.
-tell different page replacement policies.
-Priority Queues, its internal implementation and complexities.
+
+Given three arrays. Find all the pair from the two array such that the sum of those element is in the third array
+
+There is a file in secondary storage consisting name, address, phone and many other details. 
+Now sort that file on the basis of phone no. Constraints: I have very low memory. 
+I can’t bring all the content of file to main memory. Using indexing I have to solve that problem. 
+I gave k-way merging approach. Now asked me to do in a different way. He gave me hint for bst.
+
+
+ Given a BST which consists of marks of students in a class. It is found that all even ranked students 
+ have cheated,so we reduce k marks from their score. Modify the BST to make the change of marks 
+ without considering that after this operation, the BST might not remain a BST anymore.
+I gave him a modified inorder traversal so that elements are sorted and solved it using a counter variable. 
+He asked me to modify it to using neither a static counter variable nor a pointer passed to the recursive calls. 
+For both questions, he also asked me the time and space complexity.
+
+ Maintain the First Non-Repeating character in a stream of incoming and out going characters or digits simply in O(1).
+Gave some solutions for O(n) at a particular instant of time.
+But used a Hash and Queue but that did not allow maintaining the first non-repeating character as the elements could not be accessed randomly.
+There were a lot of hints and finally i understood that the interviewer was hinting at a deque where the hash value is the node pointer in deque.
+
+
+Given array of elements denoting price of some objects, print the maximum sum that can be obtained following some constraints-
+i)only one of the two ends from the array can be selected at a time
+ii)the seller can sell only one item per day
+iii)the value of each of the elements gets multiplies by the number of days passed.
+I did it with dynamic programming.
+
+
+Given four types of array
+ a)Increasing(1,2,3,4)
+ b)Decreasing(4,3,2,1)
+ c)Increasing-decreasing(1,2,3,4,7,6,5)
+ d)Decreasing-increasing(7,6,5,1,2,3,4) 
+Find the type of array in O(1) and then find the maximum element in the array.
+Except case c, max element is O(1). For c, I gave binary search solution. 
+he asked me to write the code considering the corner cases.
+
+
+Given a series of operations to build a project along with the time taken by each operation. 
+Some operations are dependent on previous operations. 
+Find the minimum number of days needed to finish the operation.
+
+
+Given a string, check whether string is Good or Bad(Condition – String is composed of ‘a’ and ‘b’ 
+characters only and you can add only “ab” anywhere in the string to form a Good string).

@@ -57,3 +57,44 @@ Ex. four classes like – pieces, board, clock, player and game.
 
  Design notification system
 
+gave a situation: n no. of vendors and m no. of warehouses(n , m very large). 
+We have to shift the products from vendors to warehouse and then from warehouse to customers. 
+Aim is to fasten the product delivery and reduce the cost to company.
+
+
+
+Given a list of vehicles group vehicles by their property.
+All vehicles with same production year and other parameters are to be grouped together.
+He asked me to write object oriented code.
+I did it with list of lists.
+Then He asked me to modify the code considering the production year and other parameters as objects 
+and not just integer or string variables.
+He was looking for some better method for comparison of two vehicles . I did it operator overloading 
+inside the vehicle class.
+
+In FB when we enter person name to search then their are multiple name FB gives us as a suggestion. 
+Design a DS for showing these name.(gives him trie DS solution)
+
+
+Design a DS where below operation is performed in O(1) time.
+Insert
+Delete
+Search
+GetRandom
+
+
+There is a audio player given which picks up a random song from the playlist and plays it.
+The song should not be repeated until all songs are played atleast once.
+The sequence number of the songs are given in an array.Design such audio player without using any extra space. 
+I suggested him to use a pointer say ‘pivot’ that initially points to the last element of array. 
+The songs to the left of the array are not yet played and the songs to the right are already played and 
+cannot be repeated. Each time a song is picked form left of the pivot and played.
+That song is then replaced with the pivot element and pivot is moved left by one position. 
+If the pivot points to the first element that means all songs have been played once and the pivot again moves to 
+the rightmost element.
+
+
+
+Design a data structure for a server which can store atmost 100 records, 2 functions are used to access server get(k) ,put(k,v,x).
+Where k is key and v is corresponding value and x is the expiry time before which this record cant be removed
+Implement a data structure to implement these function optimally. I implemented using self balancing bst and an unordered hash map
