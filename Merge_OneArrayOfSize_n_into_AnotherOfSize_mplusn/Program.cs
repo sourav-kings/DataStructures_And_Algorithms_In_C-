@@ -47,10 +47,10 @@ namespace Merge_OneArrayOfSize_n_into_AnotherOfSize_mplusn
             int i = n;
 
             /* Current index of i/p part of mPlusN[]*/
-            int j = 0;
+            int k = 0;
 
             /* Current index of N[]*/
-            int k = 0;
+            int j = 0;
 
             /* Current index of of output mPlusN[]*/
             while (k < (m + n))
@@ -87,3 +87,6 @@ namespace Merge_OneArrayOfSize_n_into_AnotherOfSize_mplusn
 }
 
 //http://www.geeksforgeeks.org/merge-one-array-of-size-n-into-another-one-of-size-mn/
+
+//Average Difficulty : 2.4/5.0
+//Based on 144 vote(s)

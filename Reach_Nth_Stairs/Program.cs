@@ -46,3 +46,8 @@ namespace Reach_Nth_Stairs
         }
     }
 }
+
+
+//http://www.geeksforgeeks.org/count-ways-reach-nth-stair/
+//Average Difficulty : 2.6/5.0
+//Based on 55 vote(s)

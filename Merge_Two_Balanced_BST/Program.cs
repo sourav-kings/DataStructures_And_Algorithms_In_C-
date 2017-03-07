@@ -53,7 +53,7 @@ namespace Merge_Two_Balanced_BST
         static void merge(List<int> list1, List<int> list2, int[] arr)
         {
             int i = 0;
-            while (list1.Count() > 0 && list2.Count() > 0)
+            while (list1.Any() && list2.Any())
             {
                 if (list1.ElementAt(0) < list2.ElementAt(0))
                 {
@@ -67,13 +67,13 @@ namespace Merge_Two_Balanced_BST
                 }
             }
 
-            while (list1.Count() != 0)
+            while (list1.Any())
             {
                 arr[i++] = list1.ElementAt(0);
                 list1.RemoveAt(0);
             }
 
-            while (list2.Count() != 0)
+            while (list2.Any())
             {
                 arr[i++] = list2.ElementAt(0);
                 list2.RemoveAt(0);
@@ -128,3 +128,22 @@ namespace Merge_Two_Balanced_BST
 //http://code.geeksforgeeks.org/hoZVLv
 
 //http://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/
+
+
+
+//Average Difficulty : 3.6/5.0
+//Based on 44 vote(s)
+
+    /*
+     * ALGO::
+     * 
+     * 0. 
+     * 1. Convert two given arrays into BST. (if not already provided). 
+     * 2. Convert both BST nodes into two seperate List using InOrder Traversal.
+     * 3. Call function with these two lists and a empty result array.
+     * 4. While loop until lists item exists:
+     *          Compare 1st item of both list. Add the smaller one to result array and remove the same from list.
+     *          While if list1 items still exist.
+     *              Add 1st item in the result and remove the same from 1st list.
+     *              Repeat for 2nd list. 
+     */

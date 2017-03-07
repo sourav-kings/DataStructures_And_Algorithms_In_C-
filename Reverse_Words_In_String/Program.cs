@@ -22,10 +22,14 @@ namespace Reverse_Words_In_String
 
             while (stc.Any())
             {
-                ans = ans + stc.Pop();
-                ans = ans + ' ';
+                ans = ans + stc.Pop() + ' ';
+                //ans = ans + ' ';
             }
             Console.WriteLine(ans);
         }
     }
 }
+
+//http://www.geeksforgeeks.org/reverse-words-in-a-given-string/
+//Average Difficulty : 2.5/5.0
+//Based on 68 vote(s)

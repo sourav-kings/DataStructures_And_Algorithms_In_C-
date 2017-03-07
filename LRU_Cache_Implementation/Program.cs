@@ -217,3 +217,6 @@ namespace LRU_Cache_Implementation
     }
 }
 ///http://www.geeksforgeeks.org/implement-lru-cache/
+///
+//Average Difficulty : 3.7/5.0
+//Based on 84 vote(s)

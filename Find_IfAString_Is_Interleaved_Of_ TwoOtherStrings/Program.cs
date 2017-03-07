@@ -21,7 +21,8 @@ namespace Find_IfAString_Is_Interleaved_Of__TwoOtherStrings
         // A function to run test cases
         static void test(string A, string B, string C)
         {
-            if (isInterleaved2(A, B, C))
+            Console.WriteLine("Dynamic Programming Solution:-");
+            if (isInterleavedDynamicProgramming(A, B, C))
                 Console.WriteLine(C + " is interleaved of " + A + " and " + B);
             else
                 Console.WriteLine(C + " is not interleaved of " + A + " and " + B);
@@ -89,7 +90,7 @@ namespace Find_IfAString_Is_Interleaved_Of__TwoOtherStrings
 
         // Returns true if C is an interleaving of A and B,
         // otherwise returns false
-        static bool isInterleaved2(string A, string B, string C)
+        static bool isInterleavedDynamicProgramming(string A, string B, string C)
         {
             int x=0,y=0,z = 0;
             // Iterate through all characters of C.
@@ -122,6 +123,25 @@ namespace Find_IfAString_Is_Interleaved_Of__TwoOtherStrings
 
             return true;
         }
+
+
+
+        // A simple recursive function to check whether C is an interleaving of A and B
+        //static bool isInterleavedRecursive(string A, string B, string C)
+        //{
+        //    // Base Case: If all strings are empty
+        //    if ((A == "" || B == "" || C == ""))
+        //        return true;
+
+        //    // If C is empty and any of the two strings is not empty
+        //    if (C == "" && (A != "" || B != ""))
+        //        return false;
+
+        //    // If any of the above mentioned two possibilities is true,
+        //    // then return true, otherwise false
+        //    //return ((C == A) && isInterleaved(A + 1, B, C + 1))
+        //    //       || ((C == B) && isInterleaved(A, B + 1, C + 1));
+        //}
     }
 }
 

@@ -62,4 +62,28 @@ namespace AllPairs_OfAnagrams_InArrayOf_Strings
 }
 
 
+
+
+/*
+ 
+The time complexity of the above solution is O(n2*m) where n is number of strings and m is maximum length of a string.
+
+    Optimizations:
+    We can optimize the above solution using following approaches.
+
+    1) Using sorting: We can sort array of strings so that all anagrams come together. 
+    Then print all anagrams by linearly traversing the sorted array. 
+    The time complexity of this solution is O(mnLogn) (We would be doing O(nLogn) comparisons in sorting 
+    and a comparison would take O(m) time)
+
+    2) Using Hashing: We can build a hash function like XOR or sum of ASCII values of all characters for a string. 
+    Using such a hash function, we can build a hash table. While building the hash table, 
+    we can check if a value is already hashed. If yes, 
+    we can call areAnagrams() to check if two strings are actually anagrams 
+    (Note that xor or sum of ASCII values is not sufficient, see Kaushik Lele’s comment here)
+
+*/
+
 //http://quiz.geeksforgeeks.org/print-pairs-anagrams-given-array-strings/
+// Average Difficulty : 2.6/5.0
+//Based on 6 vote(s)

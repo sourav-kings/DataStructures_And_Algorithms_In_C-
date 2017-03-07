@@ -25,11 +25,19 @@ namespace Kth_Smallest_Element_BST
             insert(root, 60);
             insert(root, 80);
 
-            for (int k = 1; k <= 7; k++)
+            for (int k = 1; k <= 5; k++)
             {
-                Console.Write(KSmallestUsingMorris(root, k) + " ");
+                Console.WriteLine(k + " smallest Element is :- " +  KSmallestUsingMorris(root, k) + " ");
                 //Console.Write(kthSmallestUsingStack(root, k) + " ");                
-            }                
+            }
+
+            Console.WriteLine("\n \n");
+
+            for (int k = 1; k <= 5; k++)
+            {
+                Console.WriteLine(k + " smallest Element is :- " + kthSmallestUsingStack2(root, k) + " ");
+                //Console.Write(kthSmallestUsingStack(root, k) + " ");                
+            }
         }
 
         // A utility function to insert a new node with given key in BST /
@@ -118,17 +126,15 @@ namespace Kth_Smallest_Element_BST
 
         static int kthSmallestUsingStack(Node root, int k)
         {
-            Stack<Node> stack = new Stack<Node>();
-
-            Node p = root;
+            Stack<Node> stack = new Stack<Node>();            
             int result = 0;
 
-            while (stack.Count != 0 || p != null)
+            while (stack.Count != 0 || root != null)
             {
-                if (p != null)
+                if (root != null)
                 {
-                    stack.Push(p);
-                    p = p.left;
+                    stack.Push(root);
+                    root = root.left;
                 }
                 else
                 {
@@ -136,8 +142,38 @@ namespace Kth_Smallest_Element_BST
                     k--;
                     if (k == 0)
                         result = t.key;
-                    p = t.right;
+                    root = t.right;
                 }
+            }
+
+            return result;
+        }
+
+        static int kthSmallestUsingStack2(Node root, int k)
+        {
+            Stack<Node> stack = new Stack<Node>();
+            int result = 0;
+
+            if (root == null)
+                return 0;
+
+
+            while (stack.Count != 0 || root != null)
+            {
+                if (root != null)
+                {
+                    stack.Push(root);
+                    root = root.left;
+                }
+                else
+                {
+                    Node t = stack.Pop();
+                    k--;
+                    if (k == 0)
+                        result = t.key;
+                    root = t.right;
+                }
+            
             }
 
             return result;
@@ -156,3 +192,20 @@ namespace Kth_Smallest_Element_BST
         }
     }
 }
+
+
+
+
+/*
+ * http://www.geeksforgeeks.org/find-k-th-smallest-element-in-bst-order-statistics-in-bst/
+ 
+    Average Difficulty : 3.4/5.0
+Based on 95 vote(s)
+
+     */
+
+    /*
+     * Stack Method (No Recursion)
+     * ----------------------------
+     * 
+     */

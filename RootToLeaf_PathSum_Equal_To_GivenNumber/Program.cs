@@ -20,12 +20,14 @@ namespace RootToLeaf_PathSum_Equal_To_GivenNumber
               / \   /
              3   5 2
             */
-           root = new Node(10);
-           root.left = new Node(8);
-           root.right = new Node(2);
-           root.left.left = new Node(3);
-           root.left.right = new Node(5);
-           root.right.left = new Node(2);
+            root = new Node(10);
+            root.left = new Node(8);
+            root.right = new Node(2);
+            root.left.left = new Node(3);
+            root.left.right = new Node(5);
+            root.right.left = new Node(2);
+
+            //root = null;
 
             if (haspathSum(root, sum))
                 Console.WriteLine("There is a root to leaf path with sum " + sum);
@@ -45,21 +47,20 @@ namespace RootToLeaf_PathSum_Equal_To_GivenNumber
         static bool haspathSum(Node node, int sum)
         {
             if (node == null)
-                return (sum == 0);
-            else
-            {
-                bool ans = false;
+                return false;
 
-                /* otherwise check both subtrees */
-                int subsum = sum - node.data;
-                if (subsum == 0 && node.left == null && node.right == null)
-                    return true;
-                if (node.left != null)
-                    ans = ans || haspathSum(node.left, subsum);
-                if (node.right != null)
-                    ans = ans || haspathSum(node.right, subsum);
-                return ans;
-            }
+            /* otherwise check both subtrees */
+            int subsum = sum - node.data;
+
+            if (subsum == 0 && node.left == null && node.right == null)
+                return true;
+            if (node.left != null)
+                return haspathSum(node.left, subsum);
+            if (node.right != null)
+                return haspathSum(node.right, subsum);
+
+            return false;
+
         }
 
     }
@@ -79,3 +80,17 @@ namespace RootToLeaf_PathSum_Equal_To_GivenNumber
 }
 
 //http://www.geeksforgeeks.org/root-to-leaf-path-sum-equal-to-a-given-number/
+
+//Average Difficulty : 2.4/5.0
+//Based on 100 vote(s)
+
+/*
+ * 0. Declare "ans" variable.
+ * 1. call bool function with node & sum
+ * 2. Get subsum by subtrating node data from sum.
+ * 3. If subsum is zero and node's right and left is null, return true.
+ * 4. If left child has value.
+ *      Set ans as OR combination of ans and recur of function with left node and subsum.
+ * 5. Repeat step 4 for right node
+ * 6. Return ans variable.      
+ */

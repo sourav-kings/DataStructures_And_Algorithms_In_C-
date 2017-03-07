@@ -48,8 +48,18 @@ namespace BinaryTree_Subtree_Of_Another_BinaryTree
             else
                 Console.WriteLine("Tree 2 is not a subtree of Tree 1");
 
+            //if (isSubtreeFaster(root1, root2))
+            //    Console.WriteLine("Tree 2 is subtree of Tree 1 ");
+            //else
+            //    Console.WriteLine("Tree 2 is not a subtree of Tree 1");
+
+            if (checkIfSubtree(root1, root2))
+                Console.WriteLine("Tree 2 is subtree of Tree 1 ");
+            else
+                Console.WriteLine("Tree 2 is not a subtree of Tree 1");
 
 
+            Console.WriteLine("\n");
 
             Node rootA = new Node(1);
             rootA.left = new Node(2);
@@ -62,15 +72,21 @@ namespace BinaryTree_Subtree_Of_Another_BinaryTree
             rootB.left = new Node(5);
             rootB.right = new Node(6);
 
-            if (isSubtreeFaster(rootA, rootB))
-                Console.WriteLine("Tree 2 is subtree of Tree 1 ");
-            else
-                Console.WriteLine("Tree 2 is not a subtree of Tree 1");
 
-            if (checkIfSubtree(root1, root2))
-                Console.WriteLine("Tree 2 is subtree of Tree 1 ");
+            if (isSubtree(rootA, rootB))
+                Console.WriteLine("Tree B is subtree of Tree A ");
             else
-                Console.WriteLine("Tree 2 is not a subtree of Tree 1"); 
+                Console.WriteLine("Tree B is not a subtree of Tree A ");
+
+            //if (isSubtreeFaster(rootA, rootB))
+            //    Console.WriteLine("Tree B is subtree of Tree A ");
+            //else
+            //    Console.WriteLine("Tree B is not a subtree of Tree A ");
+
+            if (checkIfSubtree(rootA, rootB))
+                Console.WriteLine("Tree B is subtree of Tree A ");
+            else
+                Console.WriteLine("Tree B is not a subtree of Tree A "); 
         }
 
         /* A utility function to check whether trees with roots as root1 and
@@ -241,9 +257,7 @@ namespace BinaryTree_Subtree_Of_Another_BinaryTree
         static private void fillUpPreorderString(String[] traversalString, Node node)
         {
             if (node == null)
-            {
                 return;
-            }
 
             traversalString[0] += node.data;
             fillUpPreorderString(traversalString, node.left);
@@ -254,9 +268,7 @@ namespace BinaryTree_Subtree_Of_Another_BinaryTree
         static private void fillUpInorderString(String[] traversalString, Node node)
         {
             if (node == null)
-            {
                 return;
-            }
 
             fillUpInorderString(traversalString, node.left);
             traversalString[0] += node.data;
@@ -312,3 +324,29 @@ namespace BinaryTree_Subtree_Of_Another_BinaryTree
 
 //http://www.geeksforgeeks.org/check-if-a-binary-tree-is-subtree-of-another-binary-tree/
 //http://www.geeksforgeeks.org/check-binary-tree-subtree-another-binary-tree-set-2/
+
+/*
+
+Average Difficulty : 2.5/5.0
+Based on 89 vote(s)
+
+
+Average Difficulty : 3.5/5.0
+Based on 72 vote(s) 
+
+ */
+
+
+
+
+/*
+ * ALGO::
+ * 
+ * 0. 
+ * 1. Call function with two tree nodes.
+ * 2. Create two new string arrays and store element  inorder traveral of both nodes as the first element.
+ * 3. If first element of bigger one is same as that of smaller one::
+ *      Create two new string arrays and store preorder traveral of both nodes as the first element.
+ *      If first element of bigger one is same as  that of small one, return true.
+ * 6. Return false in the last line, for the case if nothing matched up.
+ */

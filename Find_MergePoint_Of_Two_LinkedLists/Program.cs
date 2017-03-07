@@ -120,3 +120,6 @@ namespace Find_MergePoint_Of_Two_LinkedLists
     }
 }
 //http://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
+
+//Average Difficulty : 2.5/5.0
+//Based on 113 vote(s)

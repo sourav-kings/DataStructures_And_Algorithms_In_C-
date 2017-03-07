@@ -23,8 +23,7 @@ namespace AllNodes_AtDistance_K_From_GivenNode
             printkdistanceNode(root, target, 2);
         }
 
-        /* Recursive function to print all the nodes at distance k in
-   tree (or subtree) rooted with given root. */
+        /* Recursive function to print all the nodes at distance k in tree (or subtree) rooted with given root. */
 
         static void printkdistanceNodeDown(Node node, int k)
         {
@@ -126,3 +125,5 @@ namespace AllNodes_AtDistance_K_From_GivenNode
 
 
 //http://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/
+//Average Difficulty : 4.4/5.0
+//Based on 106 vote(s)

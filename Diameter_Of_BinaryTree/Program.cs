@@ -16,15 +16,32 @@ namespace Diameter_Of_BinaryTree
             root.right = new Node(3);
             root.left.left = new Node(4);
             root.left.right = new Node(5);
+            root.left.right.left = new Node(6);
 
-            Console.Write("The diameter of given binary tree is : "
-                               + diameter(root));
+            //root = new Node(1);
+            //root.left = new Node(2);
+            //root.left.right = new Node(3);
+            //root.left.left = new Node(4);
+            //root.left.right.right = new Node(5);
+            //root.left.left.left = new Node(10);
+
+            Console.WriteLine("The diameter of given binary tree is : "
+                               + diameter(root)); // O(n*n)
 
             Height height = new Height();
-            Console.Write("The diameter of given binary tree is : "
-                               + diameterFaster(root, height));
-            
-        }
+            Console.WriteLine("The diameter of given binary tree is : "
+                               + diameterFaster(root, height)); // O(n)
+
+
+
+            //root = new Node(1);
+            //root.left = new Node(2);
+            //root.left.right = new Node(3);
+            //root.left.left = new Node(4);
+            //root.left.right.right = new Node(5);
+            //root.left.left.left = new Node(10);
+
+    }
 
         /* Method to calculate the diameter and return it to main */
         static int diameter(Node root)
@@ -74,29 +91,29 @@ namespace Diameter_Of_BinaryTree
          from main */
         static int diameterFaster(Node root, Height height)
         {
-            /* lh --> Height of left subtree
-               rh --> Height of right subtree */
+            /* lh -. Height of left subtree
+               rh -. Height of right subtree */
             Height lh = new Height(), rh = new Height();
 
             if (root == null)
             {
-                height.h = 0;
+                //height.h = 0;
                 return 0; /* diameter is also 0 */
             }
 
-            /* ldiameter  --> diameter of left subtree
-               rdiameter  --> Diameter of right subtree */
+            /* ldiameter  -. diameter of left subtree
+               rdiameter  -. Diameter of right subtree */
             /* Get the heights of left and right subtrees in lh and rh
              And store the returned values in ldiameter and ldiameter */
-            lh.h++; rh.h++;
+            //lh.h++; rh.h++;
             int ldiameter = diameterFaster(root.left, lh);
             int rdiameter = diameterFaster(root.right, rh);
 
             /* Height of current node is max of heights of left and
              right subtrees plus 1*/
-            height.h = Math.Max(lh.h, rh.h) + 1;
+            //height.h = Math.Max(lh.h, rh.h) + 1;
 
-            return Math.Max(lh.h + rh.h + 1, Math.Max(ldiameter, rdiameter));
+            return 1 + Math.Max(lh.h + rh.h + 1, Math.Max(ldiameter, rdiameter));
         }
 
     }
@@ -125,3 +142,5 @@ namespace Diameter_Of_BinaryTree
 
 
 ///http://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+///Average Difficulty : 3.2/5.0
+///Based on 213 vote(s)

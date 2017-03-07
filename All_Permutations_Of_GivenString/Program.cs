@@ -39,6 +39,24 @@ namespace All_Permutations_Of_GivenString
     }
 }
 
+
+
+/*
+ * Algorithm Paradigm: Backtracking
+Time Complexity: O(n*n!) Note that there are n! permutations and it requires O(n) time to print a a permutation.
+ * 
+ * Note : The above solution prints duplicate permutations if there are repeating characters in input string. 
+ * Please see below link for a solution that prints only distinct permutations even if there are duplicates in input.
+
+http://www.geeksforgeeks.org/print-all-permutations-of-a-string-with-duplicates-allowed-in-input-string/
+ */
+
+
 //http://code.geeksforgeeks.org/H6Bs1h
 
 //http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
+
+//Average Difficulty : 3.5/5.0
+//Based on 192 vote(s)
+
+

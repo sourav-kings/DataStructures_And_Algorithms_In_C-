@@ -114,3 +114,6 @@ namespace StringCompression_Counting_RepeatedCharacters
 //http://codereview.stackexchange.com/questions/65335/basic-string-compression-counting-repeated-characters
 
 //http://www.geeksforgeeks.org/run-length-encoding/
+
+//Average Difficulty : 2.4/5.0
+//Based on 54 vote(s)

@@ -15,6 +15,13 @@ namespace Subarray_With_Given_Sum
             subArraySum(arr, arr.Length, sum);
             Console.WriteLine();
 
+
+            int[] arr4 = { 1, 4, 20, 3, 10, 5 };
+            int sum4 = 33;
+            subArraySumForNonNegetive(arr4, arr4.Length, sum4);
+            Console.WriteLine();
+
+
             int[] arr2 = { 10, 2, -2, -20, 10 };
             int sum2 = -10;
             subArraySumForNonNegetive(arr2, arr2.Length, sum2);
@@ -98,8 +105,12 @@ namespace Subarray_With_Given_Sum
             Console.WriteLine("No subarray found");
             return 0;
         }
+
     }
 }
 
 //http://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/
-http://www.geeksforgeeks.org/find-subarray-with-given-sum/
+//http://www.geeksforgeeks.org/find-subarray-with-given-sum/
+
+//Average Difficulty : 3.5/5.0
+//Based on 39 vote(s)

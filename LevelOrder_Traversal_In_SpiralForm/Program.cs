@@ -18,7 +18,11 @@ namespace LevelOrder_Traversal_In_SpiralForm
             root.right.left = new Node(5);
             root.right.right = new Node(4);
             Console.WriteLine("Spiral order traversal of Binary Tree is ");
-            //PrintSpiral(root);
+
+            PrintSpiral(root);
+
+            Console.WriteLine("\n");
+
             PrintSpiralFaster(root);
         }
 
@@ -66,7 +70,7 @@ namespace LevelOrder_Traversal_In_SpiralForm
                 Console.Write(node.data + " ");
             else if (level > 1)
             {
-                if (ltr != false)
+                if (ltr)
                 {
                     PrintGivenLevel(node.left, level - 1, ltr);
                     PrintGivenLevel(node.right, level - 1, ltr);
@@ -146,3 +150,6 @@ namespace LevelOrder_Traversal_In_SpiralForm
 
 
 //http://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/
+
+//Average Difficulty : 2.7/5.0
+//Based on 115 vote(s)

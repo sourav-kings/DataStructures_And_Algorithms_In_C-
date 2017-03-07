@@ -52,3 +52,5 @@ namespace Longest_Consecutive_Subsequence
 }
 
 //http://www.geeksforgeeks.org/longest-consecutive-subsequence/
+//Average Difficulty : 3.4/5.0
+//Based on 40 vote(s)

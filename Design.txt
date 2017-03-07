@@ -98,3 +98,22 @@ the rightmost element.
 Design a data structure for a server which can store atmost 100 records, 2 functions are used to access server get(k) ,put(k,v,x).
 Where k is key and v is corresponding value and x is the expiry time before which this record cant be removed
 Implement a data structure to implement these function optimally. I implemented using self balancing bst and an unordered hash map
+
+
+
+ Design the shuffle button of a music player such that it maintains random property 
+ and make sure that it plays all the songs uniquely in a cycle 
+ (i.e, no song should repeat itself unless all other songs in a particular cycle are played)
+I initially gave him an O(nlogn) approach. He wanted me to optimize it and after some pen 
+and paper work I came up with an O(n) approach.
+
+
+Traffic Car Problem. Given n people and n+1 parking slots. Each person has a car and 
+a parking slot allocated. One night they all go to a party and get drunk. \
+They end up parking their cars randomly. What’s the best way to go back to the initial configuration 
+(one where every car is in the right allocated slot). n+1­th parking slot can be used to swap the cars.
+
+
+design a student database efficiently.
+
+

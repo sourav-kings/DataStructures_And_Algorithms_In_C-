@@ -10,11 +10,12 @@ namespace Kth_Largest_Elements_In_Stream
     {
         static void Main(string[] args)
         {
-            int[] a = { 16, 17, 18, 4, 12, 9, 5, 1 };
+            int[] a = { 16, 1, 18, 4, 12, 9, 17, 5 };
             int size = a.Length;
-            int k = 3;
-            Console.WriteLine(kthLargest(a, size, k));
-            kLargest2(a, k);
+            int k = 5;
+            //Console.WriteLine(kthLargest(a, size, k));
+            //kLargest2(a, k);
+            Console.WriteLine();
             Console.WriteLine("** With Max Heap **");
             kLargestMaxHeap(a, k);
         }

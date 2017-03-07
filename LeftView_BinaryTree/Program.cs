@@ -20,7 +20,8 @@ namespace LeftView_BinaryTree
             root.right.left = new Node(25);
             root.right.right = new Node(40);
 
-            leftView();
+            //leftView();
+            leftViewUtil(root, 1);
         }
 
         // recursive function to print left view
@@ -42,10 +43,10 @@ namespace LeftView_BinaryTree
         }
 
         // A wrapper over leftViewUtil()
-        static void leftView()
-        {
-            leftViewUtil(root, 1);
-        }
+        //static void leftView()
+        //{
+        //    leftViewUtil(root, 1);
+        //}
     }
 
     class Node
@@ -62,3 +63,17 @@ namespace LeftView_BinaryTree
 }
 
 //http://www.geeksforgeeks.org/print-left-view-binary-tree/
+//Average Difficulty : 2.6/5.0
+//Based on 86 vote(s)
+
+
+/*
+ * ALGO::
+ 
+ * 0. Set maxLevel = 0;
+ * 1. Call a recurse function with node and level = 1;
+ * 2. If level == maxLevel, print data and set maxLevel as Level.
+ * 3. Recurse for left node and next level (i.e. level++)
+ * 4. Recurse for right node and next level (i.e. level++)
+
+ */

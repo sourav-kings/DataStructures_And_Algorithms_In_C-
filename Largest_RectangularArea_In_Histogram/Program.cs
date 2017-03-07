@@ -65,3 +65,5 @@ namespace Largest_RectangularArea_In_Histogram
     }
 }
 //http://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+//Average Difficulty : 4/5.0
+//Based on 129 vote(s)

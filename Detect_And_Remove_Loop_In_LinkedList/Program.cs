@@ -185,3 +185,7 @@ namespace Detect_And_Remove_Loop_In_LinkedList
 }
 
 //http://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/
+
+
+// Average Difficulty : 3.4/5.0
+//Based on 183 vote(s)

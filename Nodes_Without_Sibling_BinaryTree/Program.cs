@@ -37,19 +37,22 @@ namespace Nodes_Without_Sibling_BinaryTree
 
             // If left child is NULL and right is not, print right child
             // and recur for right child
-            else if (node.right != null)
-            {
-                Console.Write(node.right.data + " ");
-                printSingles(node.right);
+            else {
+                if (node.right != null)
+                {
+                    Console.Write(node.right.data + " ");
+                    printSingles(node.right);
+                }
+
+                // If right child is NULL and left is not, print left child
+                // and recur for left child
+                else if (node.left != null)
+                {
+                    Console.Write(node.left.data + " ");
+                    printSingles(node.left);
+                }
             }
 
-            // If right child is NULL and left is not, print left child
-            // and recur for left child
-            else if (node.left != null)
-            {
-                Console.Write(node.left.data + " ");
-                printSingles(node.left);
-            }
         }
 
     }
@@ -68,3 +71,16 @@ namespace Nodes_Without_Sibling_BinaryTree
     }
 }
 //http://www.geeksforgeeks.org/print-nodes-dont-sibling-binary-tree/
+//Average Difficulty : 2.2/5.0
+//Based on 35 vote(s)
+
+    /*
+     * ALGO::
+     * 
+     * 0.
+     * 1. Call function with node
+     * 2. Check node base case
+     * 3. If both right and left are not null, recur first for left node and then recur for right node.
+     * 4. Else If only right is not null, print right data and recur for right.
+     * 5. Else If only left is not null, print left data and recur for left.
+     */

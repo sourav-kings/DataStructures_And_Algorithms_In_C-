@@ -15,7 +15,7 @@ namespace Closest_elements_to_value
                     };
             int n = arr.Length;
             int x = 35, k = 4;
-            printKclosest(arr, x, 4, n);
+            printKclosest(arr, x, k, n);
             Console.WriteLine();
         }
 
@@ -34,7 +34,7 @@ namespace Closest_elements_to_value
             int mid = (low + high) / 2;  /* low + (high - low)/2 */
 
             /* If x is same as middle element, then return mid */
-            if (arr[mid] <= x && arr[mid + 1] > x)
+            if (arr[mid] <= x && arr[mid + 1] > x)            //if (arr[mid] == x)
                 return mid;
 
             /* If x is greater than arr[mid], then either arr[mid + 1]
@@ -49,6 +49,12 @@ namespace Closest_elements_to_value
         // n is the number of elements in arr[]
         static void printKclosest(int[] arr, int x, int k, int n)
         {
+            /*
+             * x = target number;
+             * k = no. of neighbours
+             * n = no. total elements in array
+             */
+
             // Find the crossover point
             int l = findCrossOver(arr, 0, n - 1, x);
             int r = l + 1;   // Right index to search
@@ -92,3 +98,5 @@ namespace Closest_elements_to_value
 
 
 //http://www.geeksforgeeks.org/find-k-closest-elements-given-value/
+//Average Difficulty : 3.3/5.0
+//Based on 37 vote(s)

@@ -67,3 +67,7 @@ namespace SquareRoot_Of_An_Integer
 }
 
 //http://www.geeksforgeeks.org/square-root-of-an-integer/
+/*
+ * Average Difficulty : 2.2/5.0
+Based on 46 vote(s)
+ */

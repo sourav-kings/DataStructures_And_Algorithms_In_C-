@@ -8,21 +8,24 @@ namespace Cutting_A_Rod
 {
     class Program
     {
+        static int[] allPrices;
         static void Main(string[] args)
         {
             int[] arr = new int[] { 1, 5, 8, 9, 10, 17, 17, 20 };
             int size = arr.Length;
-            Console.Write("Maximum Obtainable Value is " +
-                                cutRod(arr, size));
 
-            Console.Write("Maximum Obtainable Value is " +
+            allPrices = arr;
+            Console.WriteLine("Maximum Obtainable Value is " +
+                                cutRod(size));
+
+            Console.WriteLine("Maximum Obtainable Value is " +
                                 cutRod_DynamicProgramming(arr, size));
             
         }
 
         /* Returns the best obtainable price for a rod of length
        n and price[] as prices of different pieces */
-        static int cutRod(int[] price, int n)
+        static int cutRod(int n)
         {
             if (n <= 0)
                 return 0;
@@ -31,8 +34,10 @@ namespace Cutting_A_Rod
             // Recursively cut the rod in different pieces and
             // compare different configurations
             for (int i = 0; i < n; i++)
-                max_val = Math.Max(max_val,
-                                  price[i] + cutRod(price, n - i - 1));
+                max_val = Math.Max(
+                    max_val, 
+                    allPrices[i] + cutRod(n-(i+1))
+                    );
 
             return max_val;
         }
@@ -62,3 +67,5 @@ namespace Cutting_A_Rod
 }
 
 //http://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/
+//Average Difficulty : 3/5.0
+//Based on 88 vote(s)-

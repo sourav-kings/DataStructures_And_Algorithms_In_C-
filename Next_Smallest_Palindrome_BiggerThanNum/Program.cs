@@ -136,3 +136,5 @@ namespace Next_Smallest_Palindrome_BiggerThanNum
 }
 
 //http://www.geeksforgeeks.org/given-a-number-find-next-smallest-palindrome-larger-than-this-number/
+//Average Difficulty : 4/5.0
+//Based on 54 vote(s)

@@ -53,3 +53,6 @@ namespace First_NonRepeated_Character
 
 //http://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/
 //http://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
+
+//Average Difficulty : 2.3/5.0
+//Based on 64 vote(s)

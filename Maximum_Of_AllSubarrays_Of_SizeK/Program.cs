@@ -115,7 +115,6 @@ namespace MaximumMinimum_Of_AllSubarrays_Of_SizeK
 
 
 
-
     public class QNode
     {
         public int Data { get; set; }
@@ -260,3 +259,6 @@ namespace MaximumMinimum_Of_AllSubarrays_Of_SizeK
 
 
 //http://www.geeksforgeeks.org/maximum-of-all-subarrays-of-size-k/
+
+//Average Difficulty : 3.4/5.0
+//Based on 152 vote(s)

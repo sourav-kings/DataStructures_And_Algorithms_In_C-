@@ -99,3 +99,16 @@ namespace Reverse_List_InGroups_Of_GivenSize
     }
 }
 //http://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
+
+//Average Difficulty : 3.2/5.0
+//Based on 186 vote(s)
+
+    /*
+     
+    Algorithm: reverse(head, k)
+1) Reverse the first sub-list of size k. While reversing keep track of the next node and previous node. 
+Let the pointer to the next node be next and pointer to the previous node be prev. 
+2) head->next = reverse(next, k) // Recursively call for rest of the list and link the two sub-lists 
+3) return prev /// prev becomes the new head of the list (see the diagrams of iterative method of this post) 
+
+     */

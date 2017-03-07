@@ -16,7 +16,7 @@ namespace postorder_from_inorder_preorder
             int[] preOrder = { 1, 2, 4, 5, 3, 6 };
             int n = inOrder.Length;
             Console.WriteLine("Postorder traversal ");
-            printPostOrder(0, n-1, inOrder, preOrder);
+            printPostOrder(0, n-1, inOrder, preOrder); //4 5 2 6 3 1
             Console.WriteLine();
         }
 
@@ -51,3 +51,6 @@ namespace postorder_from_inorder_preorder
 
 //http://www.geeksforgeeks.org/print-postorder-from-given-inorder-and-preorder-traversals/
 //http://code.geeksforgeeks.org/ymiC4E
+
+//Average Difficulty : 4/5.0
+//Based on 54 vote(s)

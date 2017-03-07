@@ -14,16 +14,16 @@ namespace Clone_LinkedList_WithNextRandom_Pointer
             Node<int> node2 = new Node<int>(2);
             Node<int> node3 = new Node<int>(3);
             Node<int> node4 = new Node<int>(4);
+
             node1.next = node2;
             node2.next = node3;
             node3.next = node4;
+            node4.next = null;
 
             node1.arbitrary = node3;
             node2.arbitrary = node4;
             node3.arbitrary = node1;
             node4.arbitrary = node2;
-
-            node4.next = null;
 
             Node<int> head = node1;
             printList(head);
@@ -112,12 +112,22 @@ namespace Clone_LinkedList_WithNextRandom_Pointer
                     return abc.ToString();
         }
     }
+
+
 }
 
 //http://code.geeksforgeeks.org/j5is5q
 
 //http://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/
+//Average Difficulty : 3.7/5.0
+//Based on 101 vote(s)
+
+
+
 //http://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/
 
+//Average Difficulty : 3.5/5.0
+//Based on 64 vote(s)
 
-    // figure out how to do in HASHMAP
+
+// figure out how to do in HASHMAP

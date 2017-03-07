@@ -17,7 +17,7 @@ namespace Construct_BinaryTree_From_InorderPreorderTraversals
             int len = inOrder.Length;
             Node root = buildTree(inOrder, preOrder, 0, len - 1);
             Console.WriteLine("Inorder traversal of constructed tree is : ");
-            printInorder(root);
+            printInorder(root);//O(n * n)
 
             Console.WriteLine();
 
@@ -25,7 +25,7 @@ namespace Construct_BinaryTree_From_InorderPreorderTraversals
             int[] inOrder2 = new int[] { 4, 2, 5,1, 6, 3, 7 };
             TreeNode root2 = buildTreeFaster(preOrder2, inOrder2);
             Console.WriteLine("Faster Inorder traversal of constructed tree is : ");
-            printInorder2(root2);
+            printInorder2(root2);//O(n)
 
         }
 
@@ -50,8 +50,8 @@ namespace Construct_BinaryTree_From_InorderPreorderTraversals
                 return null;
             TreeNode root = new TreeNode(preorder[preL]); //according to the preorder, the first must be the root for current sub tree
             int index = map[root.data]; //use hashmap to find index instead of linear search
-            root.left = helper(preorder, preL + 1, index - inL + preL, inorder, inL, index - 1, map);
-            root.right = helper(preorder, preL + index - inL + 1, preR, inorder, index + 1, inR, map);
+            root.left  = helper(preorder, preL + 1,               index - inL + preL,      inorder, inL,       index - 1, map);
+            root.right = helper(preorder, preL + index - inL + 1, preR,                    inorder, index + 1, inR,       map);
             return root;
         }
         static void printInorder2(TreeNode node)
@@ -170,3 +170,6 @@ namespace Construct_BinaryTree_From_InorderPreorderTraversals
 //http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
 
 //http://blog.welkinlan.com/2014/11/08/construct-binary-tree-from-preorder-and-inorder-traversal/#comment-3200
+
+//Average Difficulty : 3.4/5.0
+//Based on 131 vote(s)

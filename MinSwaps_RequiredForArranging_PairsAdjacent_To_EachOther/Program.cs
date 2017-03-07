@@ -51,3 +51,6 @@ namespace MinSwaps_RequiredForArranging_PairsAdjacent_To_EachOther
 
 //http://code.geeksforgeeks.org/VikuyB
 //http://www.geeksforgeeks.org/minimum-number-of-swaps-required-for-arranging-pairs-adjacent-to-each-other/
+
+//Average Difficulty : 4.5/5.0
+//sBased on 77 vote(s)

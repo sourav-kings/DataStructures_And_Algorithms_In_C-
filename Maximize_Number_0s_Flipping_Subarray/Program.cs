@@ -12,8 +12,8 @@ namespace Maximize_Number_0s_Flipping_Subarray
         {
             int[] arr = { 0, 1, 0, 0, 1, 1, 0 };
             int n = arr.Length;
-            Console.WriteLine(findMaxZeroCount(arr, n));
-            Console.WriteLine(findMaxZeroCountFaster(arr, n));
+            Console.WriteLine(findMaxZeroCount(arr, n)); //O(n*n)
+            Console.WriteLine(findMaxZeroCountFaster(arr, n)); //O(n)
         }
 
 
@@ -33,13 +33,20 @@ namespace Maximize_Number_0s_Flipping_Subarray
 
             for (int i = 0; i < n; i++)
             {
+                // Value to be considered for finding maximum sum
+                int val;
+
                 // Count of zeros in original array (Not related
                 // to Kadane's algorithm)
                 if (arr[i] == 0)
+                {
                     orig_zero_count++;
-
-                // Value to be considered for finding maximum sum
-                int val = (arr[i] == 1) ? 1 : -1;
+                    val = -1;
+                }
+                else
+                    val = 1; 
+                
+                //int val = (arr[i] == 1) ? 1 : -1;
 
                 // Update current max and max_diff
                 curr_max = Math.Max(val, curr_max + val);
@@ -92,3 +99,27 @@ namespace Maximize_Number_0s_Flipping_Subarray
         }
     }
 }
+
+//http://www.geeksforgeeks.org/maximize-number-0s-flipping-subarray/
+//Average Difficulty : 3/5.0
+//Based on 33 vote(s)
+
+/*
+
+ Maximize number of 0s by flipping a subarray
+ --------------------------------------------
+
+
+Given a binary array, find the maximum number zeros in an array with one flip of a subarray allowed. 
+A flip operation switches all 0s to 1s and 1s to 0s.
+
+Examples:
+
+Input :  arr[] = {0, 1, 0, 0, 1, 1, 0}
+Output : 6
+We can get 6 zeros by flipping the subarray {1, 1}
+
+Input :  arr[] = {0, 0, 0, 1, 0, 1}
+Output : 5
+
+ */

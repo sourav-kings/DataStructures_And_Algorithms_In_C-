@@ -91,3 +91,6 @@ namespace MaximumSize_SquareSubMatrix_With_All_1s
 }
 
 //http://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
+
+//Average Difficulty : 3.2/5.0
+//Based on 126 vote(s)

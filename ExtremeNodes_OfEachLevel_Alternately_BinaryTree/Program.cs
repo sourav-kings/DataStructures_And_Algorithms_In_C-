@@ -30,6 +30,10 @@ namespace ExtremeNodes_OfEachLevel_Alternately_BinaryTree
             root.right.right.right.right = new Node(31);
 
             printExtremeNodes_Recursive(root);
+
+            Console.WriteLine("\n");
+
+            printExtremeNodes(root);//not giving write output and throwing error as well
         }
 
         /* Function to print nodes of extreme corners
@@ -56,7 +60,7 @@ namespace ExtremeNodes_OfEachLevel_Alternately_BinaryTree
 
                 // Dequeue all nodes of current level
                 // and Enqueue all nodes of next level
-                while (n != -1)//for (int i = n; i>0; i--) //
+                while (n == n-1)//for (int i = n; i>0; i--) //
                 {
                     Node curr = q.First();
 
@@ -79,7 +83,7 @@ namespace ExtremeNodes_OfEachLevel_Alternately_BinaryTree
                     if (!flag && n == 0)
                         Console.Write(curr.data + " ");
 
-                    n--;
+                    //n--;
                 }
                 // invert flag for next level
                 flag = !flag;
@@ -89,9 +93,7 @@ namespace ExtremeNodes_OfEachLevel_Alternately_BinaryTree
         static void printExtremeNodes_Recursive(Node root)
         {
             if (root == null)
-            {
                 return;
-            }
 
             Console.Write(root.data + " ");
             printExtremeNodes(root.left, root.right, 2);
@@ -99,21 +101,15 @@ namespace ExtremeNodes_OfEachLevel_Alternately_BinaryTree
         static void printExtremeNodes(Node left, Node right, int level)
         {
             if (left == null && right == null)
-            {
                 return;
-            }
 
             if (level % 2 == 0)
-            {
                 if (left != null)
-                {
                     Console.Write(left.data + " ");
-                }
-            }
+
             else if (right != null)
-            {
                 Console.Write(right.data + " ");
-            }
+
             printExtremeNodes(left.left, right.right, level + 1);
         }
     }
@@ -133,3 +129,12 @@ namespace ExtremeNodes_OfEachLevel_Alternately_BinaryTree
 
 
 //http://www.geeksforgeeks.org/print-extreme-nodes-of-each-level-of-binary-tree-in-alternate-order/
+
+//Average Difficulty : 3.3/5.0
+//Based on 19 vote(s)
+
+/*
+ The idea is to traverse tree level by level. 
+ For each level, we count number of nodes in it and print its leftmost or the rightmost node based on value of a Boolean flag. 
+ We dequeue all nodes of current level and enqueue all nodes of next level and invert value of Boolean flag when switching levels
+ */

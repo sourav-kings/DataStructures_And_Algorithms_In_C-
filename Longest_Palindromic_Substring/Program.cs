@@ -12,7 +12,7 @@ namespace Longest_Palindromic_Substring
         {
             char[] str = "forgeeksskeegfor".ToCharArray();
             Console.WriteLine("\nLength is: " + longestPalSubstr(str));
-            Console.WriteLine("\nLength is: " + longestPalSubstrSlimmer(str)); 
+            Console.WriteLine("\nLength is: " + longestPalSubstrSlimmer(str));
         }
 
         // A utility function to print a substring str[low..high]
@@ -32,60 +32,60 @@ namespace Longest_Palindromic_Substring
             // table[i][j] will be false if substring str[i..j]
             // is not palindrome.
             // Else table[i][j] will be true
-            bool[,] table = new bool [n, n];
+            bool[,] table = new bool[n, n];
             //memset(table, 0, sizeof(table));
 
- 
-    // All substrings of length 1 are palindromes
-    int maxLength = 1;
-    for (int i = 0; i<n; ++i)
-        table[i,i] = true;
- 
-    // check for sub-string of length 2.
-    int start = 0;
-    for (int i = 0; i<n-1; ++i)
-    {
-        if (str[i] == str[i + 1])
-        {
-            table[i,i + 1] = true;
-            start = i;
-            maxLength = 2;
-        }
-}
- 
-    // Check for lengths greater than 2. k is length
-    // of substring
-    for (int k = 3; k <= n; ++k)
-    {
-        // Fix the starting index
-        for (int i = 0; i<n-k+1 ; ++i)
-        {
-            // Get the ending index of substring from
-            // starting index i and length k
-            int j = i + k - 1;
- 
-            // checking for sub-string from ith index to
-            // jth index iff str[i+1] to str[j-1] is a
-            // palindrome
-            if (table[i + 1,j - 1] && str[i] == str[j])
+
+            // All substrings of length 1 are palindromes
+            int maxLength = 1;
+            for (int i = 0; i < n; ++i)
+                table[i, i] = true;
+
+            // check for sub-string of length 2.
+            int start = 0;
+            for (int i = 0; i < n - 1; ++i)
             {
-                table[i,j] = true;
- 
-                if (k > maxLength)
+                if (str[i] == str[i + 1])
                 {
+                    table[i, i + 1] = true;
                     start = i;
-                    maxLength = k;
+                    maxLength = 2;
                 }
             }
+
+            // Check for lengths greater than 2. k is length
+            // of substring
+            for (int k = 3; k <= n; ++k)
+            {
+                // Fix the starting index
+                for (int i = 0; i < n - k + 1; ++i)
+                {
+                    // Get the ending index of substring from
+                    // starting index i and length k
+                    int j = i + k - 1;
+
+                    // checking for sub-string from ith index to
+                    // jth index iff str[i+1] to str[j-1] is a
+                    // palindrome
+                    if (table[i + 1, j - 1] && str[i] == str[j])
+                    {
+                        table[i, j] = true;
+
+                        if (k > maxLength)
+                        {
+                            start = i;
+                            maxLength = k;
+                        }
+                    }
+                }
+            }
+
+
+            Console.WriteLine("Longest palindrome substring is: ");
+            printSubStr(str, start, start + maxLength - 1);
+
+            return maxLength; // return length of LPS
         }
-    }
-
-
-    Console.WriteLine("Longest palindrome substring is: ");
-    printSubStr(str, start, start + maxLength - 1 );
- 
-    return maxLength; // return length of LPS
-}
 
         // This function prints the longest palindrome substring (LPS)
         // of str[]. It also returns the length of the longest palindrome
@@ -140,3 +140,27 @@ namespace Longest_Palindromic_Substring
         }
     }
 }
+
+/*
+ http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/ 
+ The time complexity of the Dynamic Programming based solution is O(n^2) and it requires O(n^2) extra space
+    
+    Average Difficulty : 3.4/5.0
+Based on 107 vote(s)
+
+
+
+
+
+ http://www.geeksforgeeks.org/longest-palindromic-substring-set-2/
+ We can find the longest palindrome substring in (n^2) time with O(1) extra space. 
+ The idea is to generate all even length and odd length palindromes and keep track of the longest palindrome seen so far.
+
+    Average Difficulty : 3.1/5.0
+Based on 41 vote(s)
+
+
+
+
+
+     */

@@ -1,7 +1,9 @@
 ﻿"Lastly, just memorising algorithms won’t do any good. One has to learn the art of developing logic of a problem."
 
+"Interview tips : Interviewers don’t want most optimized solution. They see how you approach a question , 
+Interact with interviewer if you get stuck ,don’t jump directly to code, think loud and be confident."
 
-
+****************************************************************************************************************
 
 Given a sorted array find the number of BSTs you can form
 
@@ -139,3 +141,29 @@ Find the minimum number of days needed to finish the operation.
 
 Given a string, check whether string is Good or Bad(Condition – String is composed of ‘a’ and ‘b’ 
 characters only and you can add only “ab” anywhere in the string to form a Good string).
+
+
+Given a 2d array with only elements ‘#’ & ‘.’ . ‘#’ represents cherry and ‘.’ represents nothing . 
+Can you divide the array into 2 halves with equal cherries . 
+You can only make a single cut either horizontally or vertically .
+
+Given an API :- bool isValidWord(string) and a list of sentences. For each word in a sentence, 
+you have to print all the substrings and reversed substrings in that word which are valid 
+(validity of a string is checked by above API).
+
+Given millions of sorted lists and a God Processor that can work on infinite threads at a time, 
+make a sorted list using all the elements of given lists considering the advantage provided by such a processor.
+(My approach 1: use Priority Queue, but he said that only one thread can use the PQ at a time.
+My approach 2: use technique similar to Merge Sort).
+
+
+Given a text and pattern string. The pattern consists of the following characters
+‘+’: It can be replaced with 0 or more occurrence of the previous character
+‘*’: Matches any sequence of characters (including the empty sequence)
+‘?’: It can be replaced with single occurrence of any character
+You task is to determine if the string and pattern match after successfully replacing the special characters in the pattern with the above rules. Print “true” if the text and pattern match else print “false”
+Test Cases: The first string is the pattern and the second string represents the text
+i.  Input : Am?zon Amazon 
+    Output : true
+ii. Input : Am?z*on Amazon 
+    Output : true

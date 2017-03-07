@@ -14,7 +14,7 @@ namespace IntersectionPoint_Two_LinkedLists
             // creating first linked list
             head1 = new Node(3);
             head1.next = new Node(6);
-            head1.next.next = new Node(15);
+            head1.next.next = new Node(10);
             head1.next.next.next = new Node(15);
             head1.next.next.next.next = new Node(30);
 

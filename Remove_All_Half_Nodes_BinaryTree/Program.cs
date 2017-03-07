@@ -89,3 +89,6 @@ namespace Remove_All_Half_Nodes_BinaryTree
     }
 }
 //http://www.geeksforgeeks.org/given-a-binary-tree-how-do-you-remove-all-the-half-nodes/
+
+//Average Difficulty : 2.8/5.0
+//Based on 38 vote(s)

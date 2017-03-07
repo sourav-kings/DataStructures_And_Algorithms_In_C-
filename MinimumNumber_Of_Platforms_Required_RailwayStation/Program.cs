@@ -55,3 +55,6 @@ namespace MinimumNumber_Of_Platforms_Required_RailwayStation
 }
 
 //http://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
+
+//Average Difficulty : 3.3/5.0
+//Based on 46 vote(s)

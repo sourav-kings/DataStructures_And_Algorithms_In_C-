@@ -58,3 +58,5 @@ namespace Optimal_Strategy_For_A_Game
 }
 
 //http://www.geeksforgeeks.org/dynamic-programming-set-31-optimal-strategy-for-a-game/
+//Average Difficulty : 3.9/5.0
+//Based on 64 vote(s)

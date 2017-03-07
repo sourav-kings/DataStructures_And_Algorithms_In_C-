@@ -102,3 +102,22 @@ namespace PrintNodes_In_TopView_BinaryTree
 }
 
 //http://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
+//Average Difficulty : 3.3/5.0
+//Based on 82 vote(s)
+
+/*
+ * ALGO::
+ * 
+ * 0.
+ * 1. Make a new class  'QItem' with fields 'horizontal distance' and 'node'.
+ * 2. Call function with node and hd =0.
+ * 3. Make a new HashSet to store each unqiue hd values.
+ * 4. Make a new Queue of type 'QItem'.
+ * 5. Add new root value to Queue with node == root and hd == 0;
+ * 6. Run WHILE loop until queue has data:
+ * 7.       Deque item and get its hd and Node values.
+ * 8.       If this hd doesn't exists in the HashSet, then print it and this to HashSet.
+ *          ( If this is the first node at its horizontal distance, then this node is in top view)
+ * 9. If left child exists, enqueue Qitem with left child node and hd - 1.
+ * 10.If right child exists, enqueue Qitem with right child node and hd + 1.
+ */

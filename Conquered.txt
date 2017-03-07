@@ -1,0 +1,157 @@
+The Celebrity Problem (Others)
+Floor and Ceiling of a sorted array (Understood partially; Need more practice)
+Closest_elements_to_value (uses Ceiling algo. need practice)
+Nuts and Bolts (Consfused with Quick Sort)
+NextGreateNumber_With_Same_SetOfDigits  (others) (need practice)
+MinimumNumber_Of_Platforms_Required_RailwayStation (others)
+Merge_Overlapping_Intervals (others)
+LRU_Cache_Implementation
+Largest Rectangular Area in a Histogram
+-----------------------------------
+-----------------------------------
+** Construct_AllPossible_BSTs_ForKeys_1ToN						(4.6 --  76)
+** Clone _BinaryTree_With_RandomPointers						(4.5 -- 126)
+** AllNodes_AtDistance_K_From_GivenNode							(4.4 -- 106)
+** InorderTraversal_Without_RecursionAndStack_BinaryTree		(4.2 -- 193)
+** Find_Pair_WithGivenSum_In_BalancedBST						(4.2 --  86)
+** Distance_Between_TwoNodes_BinaryTree							(3.8 --  55)
+** Merge_Two_Balanced_BST										(3.6 --  44)
+** Boundary_Traversal_Of_BinaryTree								(3.5 -- 118)
+** Correct_BST_By_Swapping_TwoNodes								(3.5 --  92)
+** BinaryTree_Subtree_Of_Another_BinaryTree	(2 soln)			(3.5 --  72)
+** Construct_BinaryTree From_InorderPreorderTraversals			(3.4 -- 131)
+** Kth_Smallest_Element_BST										(3.4 --  95)
+** Connect_Nodes_At_SameLevel									(3.3 -- 108)
+** PrintNodes_In_TopView_BinaryTree								(3.3 --  82)
+** TotalNumber_Of_PossibleBSTs_With_N_keys						(3.3 --  52)
+** ExtremeNodes_OfEachLevel_Alternately_BinaryTree				(3.3 --  19)
+** Diameter_Of_BinaryTree										(3.2 -- 213)
+** Check_If_BinaryTree_Is_BST									(3.0 -- 168)
+** Inorder_Successor_In_BinarySearchTree						(2.8 -- 102)
+** LevelOrder_Traversal_In_SpiralForm							(2.7 -- 115)
+** Maximum_Width_BinaryTree										(2.6 -- 106)
+** LeftView_BinaryTree											(2.6 --  86)
+** SortedArray_To_BST											(2.6 --  84)
+** Flatten_BinaryTree_To_LinkedList								(2.5 --  xx)
+** RootToLeaf_PathSum_Equal_To_GivenNumber						(2.4 -- 100)
+** Print_BST_Keys_InGivenRange									(2.4 --  66)
+** Level_Order_Tree_Traversal									(2.3 -- 178)
+** Least_Common_Ancestor_BST									(2.2 -- 133)
+** Nodes_Without_Sibling_BinaryTree								(2.2 --  35)
+** Minimum_Depth_BinaryTree										(2.1 --  60)	
+** Preorder_Traversal_WithoutRecursion_BinaryTree				(2.1 --  50)
+-----------------------------------
+-----------------------------------
+Check_ForPairIn_A[]_WithSumAs_X	(2 soln)						(2.2 -- 300)
+Subarray_With_Given_Sum	(2 soln)								(3.5 --  39)
+CountNumber_Of_Occurrences_In_SortedArray						(2.6 --  73)			
+Closest_elements_to_value										(3.3 --  37)
+FindMaximum_ j– i_SuchThat_arr[j]_BiggerThan_arr[i]				(3.8 -- 155)
+Floor_Ceiling_In_SortedArray									(2.4 --  55)
+Maximum_And_Minimum_In_Array									(2.5 --  62)
+MaximumSum_SuchThat_NoTwoElements_AreAdjacent					(3.3 -- 205)
+Merge an array of size n into another array of size m+n			(2.4 -- 144)
+Merge_TwoSortedArrays_With_O(1)ExtraSpace						(3.0 --  80)
+Number_Of_Rotations_SortedArray									(2.9 --   1)
+
+-----------------------------------
+-----------------------------------
+All_Permutations_Of_GivenString							(3.5 -- 192)
+AllPairs_OfAnagrams_InArrayOf_Strings					(2.6 --   6)
+First_NonRepeated_Character								(2.3 --  64)
+Group_Anagrams											(	 --    )
+Lexicographically_Minimum_String_Rotation				(3.1 --  10) 
+Longest_Substring_Without_Repeating_Characters			(	 --    )
+Remove_Duplicates_From_InputString						(1.8 --  75)
+Reverse_Words_In_String									(2.5 --  68)
+StringCompression_Counting_RepeatedCharacters			(2.4 --  50)
+Unique_Characters_From_TwoStrings						(	 --    )
+Unique_Words_From_TwoStrings							(	 --    )
+-----------------------------------
+-----------------------------------
+Detect_And_Remove_Loop_In_LinkedList
+Add_1_ToANumber_RepresentedAs_LinkedList	
+Find_MergePoint_Of_Two_LinkedLists
+Fold_LinkedList
+IntersectionPoint_Two_LinkedLists
+-----------------------------------
+-----------------------------------
+
+A_Boolean_Matrix_Question								(2.7 --  62)
+MaximumSize_SquareSubMatrix_With_All_1s					(3.2 -- 134)
+Number_Of_Islands										(3.2 --  85)
+Print_Matrix_In_Spiral_Form								(2.9 --  92)
+Search_In_Rowcolumn_Wise_SortedMatrix					(2.6 --  90)
+
+
+
+
+
+
+
+---------------------------------------
+** Extreme Tough (will do in last) **
+---------------------------------------
+Next_Smallest_Palindrome_BiggerThanNum (others)
+Minimum number of swaps required for arranging pairs adjacent to each other (others)
+Minimum_Range_Query_SegmentTrees (others)
+Median_In_Stream_Of_Integers (others)
+MaximumNumber_Of_A_UsingGivenFourKeys (others) ---- understood, need more practice.
+LongestPath_Directed_AcyclicGraph (others)
+Find_Tour_That_Visits_AllStations (others) ---- understood, need more practice.
+-----------------------------------
+-----------------------------------
+postorder_from_inorder_preorder -- understood
+RemoveAllNode_Which_DontLieIn_AnyPathWithSumGreaterThanK ---- understood
+-----------------------------------
+-----------------------------------
+Merge_TwoSortedArrays_With_O(1)ExtraSpace (array)
+Kth_Largest_Element
+Maximize_Number_0s_Flipping_Subarray
+MaximumMinimum_Of_AllSubarrays_Of_SizeK (based on Deque)
+-----------------------------------
+-----------------------------------
+Kth_Largest_Elements_In_Stream (needs understanding of HEAPS)
+Longest_Palindromic_Substring
+ShortestChain_Length_To_Reach_TargetWord
+SmallestWindowInString_With_AllChars_Of_AnotherString  ---- have NOT got solution yet
+-----------------------------------
+-----------------------------------
+Clone_LinkedList_WithNextRandom_Pointer_HashMap  ---- understood
+Add_TwoNos_LinkedLists_Recursion_NoModification  ---- understood
+Reverse_List_InGroups_Of_GivenSize
+Add_1_ToANumber_RepresentedAs_LinkedList
+Reverse_Alternate_K_Nodes_LinkedList
+-----------------------------------
+-----------------------------------
+PrintAllSortedElements_From_RowColumn_Sorted_Matrix (needs understanding of HEAPS)
+-----------------------------------
+-----------------------------------
+
+
+** DYNAMIC PROGRAMMING **
+Coin_Change_Problem
+Cutting_A_Rod
+Egg_Dropping_Puzzle
+Longest_Arithmetic_Progression (4.5)
+Longest_Palindromic_Subsequence (3.5)
+Minimum_Cost_Path (2.3)
+Minimum_Insertions_ToForm_Palindrome (3.7 -- 40)
+Word_Break_Problem (3.6 -- 47)
+Optimal_Strategy_For_A_Game (3.9 -- 64)
+
+
+
+
+
+
+
+
+
+Trees   - 41 puzzles
+Arrays  - 18
+Strings - 16
+Others	- 49
+Linked	- 14
+Matrix	-  9
+DP		- 11

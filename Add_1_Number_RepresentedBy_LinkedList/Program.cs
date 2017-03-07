@@ -121,3 +121,6 @@ namespace Add_1_ToANumber_RepresentedAs_LinkedList
 }
 
 //http://www.geeksforgeeks.org/add-1-number-represented-linked-list/
+
+//Average Difficulty : 2.3/5.0
+//Based on 51 vote(s)

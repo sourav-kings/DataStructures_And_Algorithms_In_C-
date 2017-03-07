@@ -54,3 +54,8 @@ namespace Longest_Palindromic_Subsequence
 }
 
 //http://www.geeksforgeeks.org/dynamic-programming-set-12-longest-palindromic-subsequence/
+//https://www.youtube.com/watch?v=_nCsPn7_OgI&index=9&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr
+//https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/LongestPalindromicSubsequence.java
+
+//Average Difficulty : 3.3/5.0
+//Based on 101 vote(s)

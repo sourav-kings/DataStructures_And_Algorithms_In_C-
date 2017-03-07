@@ -1,0 +1,1370 @@
+﻿<header id="masthead" class="masthead">
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+
+
+        <div class="utility-section-wrapper blue">
+
+            <div id="utility-section" class="utility-section row">
+                <!-- Logo -->
+                <div id="navbar-brand" class="navbar-brand col-md-1">
+                    <a href="http://www.dell.com?~ck=mn" class="logo">
+                        <i class="icon-brand-dell logo"></i>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div id="masthead-search" class="search-container col-sm-8 col-md-8">
+                    <form id="search-form">
+                        <input id="search-input" type="text" class="search-query form-control" placeholder="What can we help you find?" autocomplete="off">
+                        <button type="submit" class="btn">
+                            <span class="hidden-xs">Search</span>
+                            <i class="icon-small-searchleft visible-xs"></i>
+                        </button>
+                        <div class="autocomplete"><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div></div>
+                    </form>
+                </div>
+
+                <!-- Links -->
+                <div class="utility">
+                    <ul id="right-utility" class="utility">
+
+                        <!-- Search (Phone Only)-->
+                        <li id="mobile-search-button" class="mobile-search-button dropdown hidden-sm hidden-md hidden-lg">
+                            <a href="#">
+                                <i class="icon-small-searchleft" data-testid="mastheadSearchAnchor"></i>
+                            </a>
+                        </li>
+
+                        <!-- Hamburger Menu (for tablets and phones)-->
+                        <li class="hidden-md hidden-lg pull-right hand">
+                            <a class="navbar-toggle" data-toggle="site-menu">
+                                <i class="icon-ui-menucollapsed"></i>
+                            </a>
+                        </li>
+
+                        <!-- Sign In -->
+
+                        <li class="dropdown utility-button col-sm-2 col-md-8 sign-in-dropdown">
+                            <a id="signin-link" href="#">
+
+                                <!-- Sign In Button (only visible to anonymous users) -->
+                                <div class="visible-anonymous-user account-dropdown-label">
+                                    <i class="icon-small-useraccount"></i>
+                                    <span id="sign-in" class="hidden-xs hidden-sm"><div id="signin-button">Sign In</div></span>
+                                </div>
+
+                                <!-- Sign Out Button (only visible to authenticated users) -->
+                                <div class="visible-authenticated-user  account-dropdown-label">
+                                    <div class="account-icon-wrapper">
+                                        <div class="badge"><i class="icon-small-checkmark"></i></div>
+                                        <i class="icon-small-useraccount element-inline"></i>
+                                    </div>
+                                    <div class="hidden-xs hidden-sm" id="user_name">Sign Out</div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu sign-in-content-wrapper" role="menu">
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+
+                                    <!-- Dropdown for anonymous users (controlled by visible-anonymous-user class) -->
+                                    <div class="visible-anonymous-user sign-in-content ">
+
+
+                                        <h5 class="text-gray-dark">My Account</h5>
+                                        <div class="row sign-in-bullets">
+                                            <ul>
+                                                <li>Place orders quickly and easily</li>
+                                                <li>View orders and track your shipping status</li>
+                                                <li>Enjoy members-only rewards and discounts</li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="flyout-btn" href="https://www.dell.com/identity/global/loginorregister?connectionId=98254675-AC6F-47D9-A7E4-4537724F135D&amp;wreply=http%3a%2f%2fwww.dell.com%2fen-us%2fhome%2f&amp;c=us&amp;l=en&amp;r=us&amp;s=dhs&amp;cs=19&amp;~ck=mn">
+                                                    <button class="btn btn-primary signin btn-block top-offset-mini " type="button">Sign In</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="flyout-btn" href="https://www.dell.com/identity/global/loginorregister?connectionId=98254675-AC6F-47D9-A7E4-4537724F135D&amp;wreply=http%3a%2f%2fwww.dell.com%2fen-us%2fhome%2f&amp;c=us&amp;l=en&amp;r=us&amp;s=dhs&amp;cs=19&amp;~ck=mn">
+                                                    <button class="btn btn-default createaccount btn-block top-offset-mini " type="button">Create an account</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h5>
+                                            <a href="https://www.dell.com/identity/v2/discovery?cht=login&amp;l=en&amp;c=us&amp;s=corp&amp;~ck=mn">Premier Sign In</a>
+                                        </h5>
+                                        <hr>
+                                        <h5>
+                                            <a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:partnerprogram:signin&amp;~ck=mn">Partner Program Sign In</a>
+                                        </h5>
+                                    </div>
+
+                                    <!-- Logged In Dropdown (controlled by visible-authenticated-user class) -->
+                                    <div class="visible-authenticated-user sign-in-content ">
+
+
+                                        <h5>
+                                            <a href="http://www.dell.com/en-us/myaccount?~ck=mn">Account Settings</a>
+                                        </h5>
+                                        <hr>
+                                        <h5>
+                                            <a href="https://www.dell.com/support/orderstatus?~ck=mn">Order Status</a>
+                                        </h5>
+                                        <hr>
+                                        <h5>
+                                            <a href="http://www.dell.com/support/assets?~ck=mn">My Products</a>
+                                        </h5>
+                                        <hr>
+                                        <h5>
+                                            <a href="https://dfs.dell.com/pages/dfshomepage.aspx?~ck=mn">Dell Preferred Account</a>
+                                        </h5>
+                                        <hr>
+                                        <h5>
+                                            <a href="http://www.dell.com/en-us/learn/finance-and-rewards/rewards-details?~ck=mn">Dell Advantage Rewards</a>
+                                        </h5>
+                                        <hr>
+                                        <h5>
+                                            <a href="https://www.dell.com/identity/v2/discovery?cht=login&amp;l=en&amp;c=us&amp;s=corp&amp;~ck=mn">Premier Sign In</a>
+                                        </h5>
+                                        <hr>
+                                        <h5>
+                                            <a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:partnerprogram:signin&amp;~ck=mn">Partner Program Sign In</a>
+                                        </h5>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="flyout-btn" href="/en-us/security/authentication/signoutreturntoreferrer?~ck=mn">
+                                                    <button class="btn btn-default signout btn-block top-offset-mini bottom-offset-mini" type="button">Sign Out</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="hidden-xs hidden-sm mda">
+
+                        </div>
+
+                        <!-- Cart -->
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mastheadMenu-wrapper">
+            <div class="masthead-shadow-section"></div>
+
+            <div class="main-nav-section-wrapper">
+
+
+                <!-- Desktop Menu -->
+
+
+                <div class="main-nav-section hidden-xs hidden-sm">
+                    <div class="shadow-overlay-left"></div>
+                    <ul class="tier1">
+                        <li class="">
+                            <a href="#">
+                                Products
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        Laptops
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -3px;">
+                                        <li class="">
+                                            <a href="http://www.dell.com/en-us/shop/category/laptops?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-laptops2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Laptops for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/laptops?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-laptops.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Laptops for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Desktops &amp; All-in-One PCs
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;">
+                                        <li class="">
+                                            <a href="http://www.dell.com/en-us/shop/category/desktops?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-desktops3.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Desktops &amp; All-in-One PCs for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/desktops-n-workstations?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-desktops2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Desktops &amp; All-in-One PCs for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tablets &amp; 2-in-1 PCs
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/category/2-in-1-laptop?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-2in1-pcs.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Tablets &amp; 2-in-1 PCs for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/dell-tablets?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-tablets2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Tablets &amp; 2-in-1 PCs for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Gaming
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/gaming/alienware?cs=19&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-alienware-pcs.png" alt=".">
+
+                                                <span class="caption text-blue">Alienware PCs</span>
+
+                                                <p class="text-gray-dark">View all Gaming Laptops &amp; Desktops</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/game-ready/ab/dell-gaming?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-gaming-consoles2.png" alt=".">
+
+                                                <span class="caption text-blue">Dell Gaming</span>
+
+                                                <p class="text-gray-dark">View all Consoles, Games &amp; Accessories</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/us/business/p/workstations?~ck=mn">Workstations</a></li>
+                                <li><a href="http://www.dell.com/us/business/p/cloud-client?stp_redir=false&amp;~ck=mn">Thin Clients</a></li>
+                                <li><a href="http://www.dell.com/us/business/p/enterprise-products?stp_redir=false&amp;~ck=mn">Servers &amp; Storage</a></li>
+                                <li>
+                                    <a href="#">
+                                        Networking
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/networking/ac/4011?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-networking3.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Networking for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/networking-products?stp_redir=false&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-networking2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Networking for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Monitors
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: 4px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/monitors-monitor-accessories/ac/4009?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Monitors for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/category.aspx?c=us&amp;category_id=4009&amp;l=en&amp;s=bsd&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Monitors for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Printers &amp; Ink
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -31px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/printers-ink-toner/ac/4014?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-printers2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Printers &amp; Ink for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/category.aspx?c=us&amp;category_id=4014&amp;l=en&amp;s=bsd&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-printers2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Printers &amp; Ink for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Software
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -66px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/software/ac/4020?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-software2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Software for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/software?stp_redir=false&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-software2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Software for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Electronics &amp; Accessories
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -141px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/accessories?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-electronics5.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Electronics &amp; Accessories for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/default.aspx?c=us&amp;l=en&amp;s=bsd&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-electronics3.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Electronics &amp; Accessories for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/us/business/p/gateways-embedded-pcs?stp_redir=false&amp;~ck=mn">Gateways &amp; Embedded PCs</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Solutions &amp; Services
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu" style="height: 432px;">
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions?~ck=mn">View All Solutions &amp; Services</a></li>
+                                <li>
+                                    <a href="#">
+                                        Industries
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 " data-breakpoint="&quot;desktop&quot;" style="top: -57px; height: 432px;">
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/education?~ck=mn">Education</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-industry-oil-and-gas?~ck=mn">Energy</a></li>
+                                        <li><a href="http://www.dell.com/learn/us/en/rc1009777/fed/?~ck=mn">Federal Government</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/financial-services?~ck=mn">Financial Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/healthcare?~ck=mn">Healthcare</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/manufacturing?~ck=mn">Manufacturing</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/oem-industry-solutions?~ck=mn">Original Equipment Manufacturers</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/retail?~ck=mn">Retail</a></li>
+                                        <li><a href="http://www.dell.com/learn/us/en/04/slg?~ck=mn">State &amp; Local Government</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/tme?~ck=mn">Telecommunications, Media &amp; Entertainment</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-industry-web-development?~ck=mn">Web Development</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Dell Services
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 " data-breakpoint="&quot;desktop&quot;" style="top: -92px; height: 432px;">
+                                        <li><a href="http://www.dell.com/learn/by-service-type?c=us&amp;l=en&amp;s=bsd&amp;~ck=mn">View All Dell Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-application-services?~ck=mn">Application Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-business-process-outsourcing?~ck=mn">Business Process Outsourcing</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-business-consulting?~ck=mn">Digital Business Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-it-consulting?~ck=mn">IT Consulting</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/it-support-lifecycle?~ck=mn">IT Support &amp; Lifecycle Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/infrastructure-managed-services?~ck=mn">Managed Services</a></li>
+                                        <li><a href="http://www.dell.com/support/contents/article/Warranty/consumer-service-store?~ck=mn">Support Services For Home</a></li>
+                                        <li><a href="http://www.dell.com/support/contents/article/Warranty/commercial-service-store?~ck=mn">Support Services For Business</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-training-services?~ck=mn">Training Services</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/business-intelligence-big-data?~ck=mn">Big Data</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/dell-cloud-computing?~ck=mn">Cloud</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/data-center?~ck=mn">Data Center</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/end-user?~ck=mn">End User</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/internet-of-things-solutions?~ck=mn">Internet of Things</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/mobility-dell-mobility-solutions?~ck=mn">Mobile</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/security?~ck=mn">Security</a></li>
+                                <li>
+                                    <a href="#">
+                                        Dell EMC Solutions
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 " data-breakpoint="&quot;desktop&quot;" style="top: -372px; height: 432px;">
+                                        <li><a href="http://www.emc.com/en-us/products-solutions/solutions.htm?~ck=mn">View All Dell EMC Solutions</a></li>
+                                        <li><a href="http://www.emc.com/en-us/storage/discover-flash-storage/index.htm?~ck=mn">All-Flash</a></li>
+                                        <li><a href="http://www.emc.com/en-us/converged-infrastructure/benefits.htm?~ck=mn">Converged Infrastructure</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Support
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu">
+                                <li><a href="http://www.dell.com/support/home?c=us&amp;l=en&amp;~ck=mn">View All Support</a></li>
+                                <li><a href="http://www.dell.com/support/home/product-support?c=us&amp;l=en&amp;~ck=mn">Support by Product</a></li>
+                                <li><a href="http://www.dell.com/support/Contents/category/Product-Support/Self-support-Knowledgebase?c=us&amp;l=en&amp;~ck=mn">Support Library</a></li>
+                                <li><a href="http://www.dell.com/support/Contents/category/eSupport-Order-support?c=us&amp;l=en&amp;~ck=mn">Order Support</a></li>
+                                <li><a href="http://www.dell.com/support/contents/Category/Warranty?~ck=mn">Warranty and Support Services</a></li>
+                                <li><a href="http://www.dell.com/support/contents/article/Warranty/consumer-service-store?~ck=mn">Support Services For Home</a></li>
+                                <li><a href="http://www.dell.com/support/contents/article/Warranty/commercial-service-store?~ck=mn">Support Services For Business</a></li>
+                                <li><a href="http://www.dell.com/support/contents/category/Contact-Information?c=us&amp;l=en&amp;~ck=mn">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Deals
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        Laptop Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -3px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/deals/popular-laptop-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-deals-laptops.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Laptop Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/deals/laptop-tablet-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-laptops.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Laptop Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Desktop Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/deals/popular-desktop-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-desktops3.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Desktop Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/deals/desktop-all-in-one-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-desktops2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Desktop Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/us/business/p/deals/poweredge-tower-server-deals?~ck=mn">Server Deals</a></li>
+                                <li>
+                                    <a href="#">
+                                        Dell Outlet
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;">
+                                        <li>
+                                            <a href="http://www.dell.com/us/dfh/p/?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-outlet.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Outlet for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/dfb/p/?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-outlet.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Outlet for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Dell Advantage Rewards
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/learn/finance-and-rewards/rewards-details?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-delladvantage.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View Dell Advantage Rewards for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/learn/us/en/04/campaigns/advantage-us-bsd?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-delladvantage.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View Dell Advantage Rewards for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/en-us/shop/purchaseprogram?~ck=mn">Employee, Student, Military Discounts</a></li>
+                                <li>
+                                    <a href="#">
+                                        TV Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -16px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/tv-deals/ar/8224?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-tvs.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all TV Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/sna.aspx?c=us&amp;l=en&amp;s=bsd&amp;~topic=tv_deals&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-tvs.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all TV Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Financing
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -71px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/learn/finance-and-rewards/financing-details?cs=19&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-financing.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Financing for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/work/learn/dbc/overview?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-financing.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Financing for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Coupons
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -86px;">
+                                        <li>
+                                            <a href="http://www.dell.com/learn/us/en/19/campaigns/dell-coupons-codes-us-dhs?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-coupons.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Coupons for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/learn/us/en/04/campaigns/dell-coupon-codes-us-smb?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-coupons.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Coupons for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Accessory Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -141px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/computer-accessories-deals/ar/8228?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-accessories2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Accessory Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/sna.aspx?c=us&amp;l=en&amp;s=bsd&amp;~topic=pc_accessories_deals&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-accessories2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Accessory Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Monitor Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" data-breakpoint="&quot;desktop&quot;" style="top: -156px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/monitor-deals/ar/8225?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Monitor Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/sna.aspx?c=us&amp;l=en&amp;s=bsd&amp;~topic=monitor_deals&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Monitor Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Mobile Menu -->
+
+
+                <div class="main-nav-section visible-xs visible-sm mobile">
+                    <div class="shadow-overlay-left"></div>
+                    <ul class="tier1">
+                        <li>
+                            <a href="#">
+                                Products
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        Laptops
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/category/laptops?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-laptops2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Laptops for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/laptops?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-laptops.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Laptops for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Desktops &amp; All-in-One PCs
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/category/desktops?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-desktops3.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Desktops &amp; All-in-One PCs for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/desktops-n-workstations?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-desktops2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Desktops &amp; All-in-One PCs for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tablets &amp; 2-in-1 PCs
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/category/2-in-1-laptop?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-2in1-pcs.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Tablets &amp; 2-in-1 PCs for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/dell-tablets?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-tablets2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Tablets &amp; 2-in-1 PCs for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Gaming
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/gaming/alienware?cs=19&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-alienware-pcs.png" alt=".">
+
+                                                <span class="caption text-blue">Alienware PCs</span>
+
+                                                <p class="text-gray-dark">View all Gaming Laptops &amp; Desktops</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/game-ready/ab/dell-gaming?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-gaming-consoles2.png" alt=".">
+
+                                                <span class="caption text-blue">Dell Gaming</span>
+
+                                                <p class="text-gray-dark">View all Consoles, Games &amp; Accessories</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/us/business/p/workstations?~ck=mn">Workstations</a></li>
+                                <li><a href="http://www.dell.com/us/business/p/cloud-client?stp_redir=false&amp;~ck=mn">Thin Clients</a></li>
+                                <li><a href="http://www.dell.com/us/business/p/enterprise-products?stp_redir=false&amp;~ck=mn">Servers &amp; Storage</a></li>
+                                <li>
+                                    <a href="#">
+                                        Networking
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/networking/ac/4011?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-networking3.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Networking for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/networking-products?stp_redir=false&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-networking2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Networking for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Monitors
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/monitors-monitor-accessories/ac/4009?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Monitors for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/category.aspx?c=us&amp;category_id=4009&amp;l=en&amp;s=bsd&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Monitors for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Printers &amp; Ink
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/printers-ink-toner/ac/4014?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-printers2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Printers &amp; Ink for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/category.aspx?c=us&amp;category_id=4014&amp;l=en&amp;s=bsd&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-printers2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Printers &amp; Ink for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Software
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/software/ac/4020?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-software2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Software for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/software?stp_redir=false&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-software2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Software for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Electronics &amp; Accessories
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/accessories?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-electronics5.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Electronics &amp; Accessories for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/default.aspx?c=us&amp;l=en&amp;s=bsd&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-electronics3.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Electronics &amp; Accessories for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/us/business/p/gateways-embedded-pcs?stp_redir=false&amp;~ck=mn">Gateways &amp; Embedded PCs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Solutions &amp; Services
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu">
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions?~ck=mn">View All Solutions &amp; Services</a></li>
+                                <li>
+                                    <a href="#">
+                                        Industries
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 ">
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/education?~ck=mn">Education</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-industry-oil-and-gas?~ck=mn">Energy</a></li>
+                                        <li><a href="http://www.dell.com/learn/us/en/rc1009777/fed/?~ck=mn">Federal Government</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/financial-services?~ck=mn">Financial Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/healthcare?~ck=mn">Healthcare</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/manufacturing?~ck=mn">Manufacturing</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/oem-industry-solutions?~ck=mn">Original Equipment Manufacturers</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/retail?~ck=mn">Retail</a></li>
+                                        <li><a href="http://www.dell.com/learn/us/en/04/slg?~ck=mn">State &amp; Local Government</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/tme?~ck=mn">Telecommunications, Media &amp; Entertainment</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-industry-web-development?~ck=mn">Web Development</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Dell Services
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 ">
+                                        <li><a href="http://www.dell.com/learn/by-service-type?c=us&amp;l=en&amp;s=bsd&amp;~ck=mn">View All Dell Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-application-services?~ck=mn">Application Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-business-process-outsourcing?~ck=mn">Business Process Outsourcing</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-business-consulting?~ck=mn">Digital Business Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-it-consulting?~ck=mn">IT Consulting</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/it-support-lifecycle?~ck=mn">IT Support &amp; Lifecycle Services</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/infrastructure-managed-services?~ck=mn">Managed Services</a></li>
+                                        <li><a href="http://www.dell.com/support/contents/article/Warranty/consumer-service-store?~ck=mn">Support Services For Home</a></li>
+                                        <li><a href="http://www.dell.com/support/contents/article/Warranty/commercial-service-store?~ck=mn">Support Services For Business</a></li>
+                                        <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/by-service-type-training-services?~ck=mn">Training Services</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/business-intelligence-big-data?~ck=mn">Big Data</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/dell-cloud-computing?~ck=mn">Cloud</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/data-center?~ck=mn">Data Center</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/end-user?~ck=mn">End User</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/internet-of-things-solutions?~ck=mn">Internet of Things</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/mobility-dell-mobility-solutions?~ck=mn">Mobile</a></li>
+                                <li><a href="http://www.dell.com/en-us/work/learn/large-enterprise-solutions/security?~ck=mn">Security</a></li>
+                                <li>
+                                    <a href="#">
+                                        Dell EMC Solutions
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 ">
+                                        <li><a href="http://www.emc.com/en-us/products-solutions/solutions.htm?~ck=mn">View All Dell EMC Solutions</a></li>
+                                        <li><a href="http://www.emc.com/en-us/storage/discover-flash-storage/index.htm?~ck=mn">All-Flash</a></li>
+                                        <li><a href="http://www.emc.com/en-us/converged-infrastructure/benefits.htm?~ck=mn">Converged Infrastructure</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Support
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu">
+                                <li><a href="http://www.dell.com/support/home?c=us&amp;l=en&amp;~ck=mn">View All Support</a></li>
+                                <li><a href="http://www.dell.com/support/home/product-support?c=us&amp;l=en&amp;~ck=mn">Support by Product</a></li>
+                                <li><a href="http://www.dell.com/support/Contents/category/Product-Support/Self-support-Knowledgebase?c=us&amp;l=en&amp;~ck=mn">Support Library</a></li>
+                                <li><a href="http://www.dell.com/support/Contents/category/eSupport-Order-support?c=us&amp;l=en&amp;~ck=mn">Order Support</a></li>
+                                <li><a href="http://www.dell.com/support/contents/Category/Warranty?~ck=mn">Warranty and Support Services</a></li>
+                                <li><a href="http://www.dell.com/support/contents/article/Warranty/consumer-service-store?~ck=mn">Support Services For Home</a></li>
+                                <li><a href="http://www.dell.com/support/contents/article/Warranty/commercial-service-store?~ck=mn">Support Services For Business</a></li>
+                                <li><a href="http://www.dell.com/support/contents/category/Contact-Information?c=us&amp;l=en&amp;~ck=mn">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Deals
+                                <i class="menu-indicator pull-right"></i>
+                            </a>
+                            <ul class="tier2 dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        Laptop Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/deals/popular-laptop-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-deals-laptops.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Laptop Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/deals/laptop-tablet-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-laptops.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Laptop Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Desktop Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/deals/popular-desktop-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-desktops3.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Desktop Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/business/p/deals/desktop-all-in-one-deals?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-desktops2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Desktop Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/us/business/p/deals/poweredge-tower-server-deals?~ck=mn">Server Deals</a></li>
+                                <li>
+                                    <a href="#">
+                                        Dell Outlet
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/us/dfh/p/?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-outlet.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Outlet for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/us/dfb/p/?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-outlet.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Outlet for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Dell Advantage Rewards
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/learn/finance-and-rewards/rewards-details?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-delladvantage.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View Dell Advantage Rewards for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/learn/us/en/04/campaigns/advantage-us-bsd?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-delladvantage.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View Dell Advantage Rewards for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.dell.com/en-us/shop/purchaseprogram?~ck=mn">Employee, Student, Military Discounts</a></li>
+                                <li>
+                                    <a href="#">
+                                        TV Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/tv-deals/ar/8224?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-tvs.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all TV Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/sna.aspx?c=us&amp;l=en&amp;s=bsd&amp;~topic=tv_deals&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-tvs.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all TV Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Financing
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/learn/finance-and-rewards/financing-details?cs=19&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-financing.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Financing for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/work/learn/dbc/overview?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-financing.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Financing for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Coupons
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/learn/us/en/19/campaigns/dell-coupons-codes-us-dhs?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-coupons.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Coupons for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.dell.com/learn/us/en/04/campaigns/dell-coupon-codes-us-smb?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-deals-coupons.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Coupons for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Accessory Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/computer-accessories-deals/ar/8228?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-accessories2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Accessory Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/sna.aspx?c=us&amp;l=en&amp;s=bsd&amp;~topic=pc_accessories_deals&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-accessories2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Accessory Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Monitor Deals
+                                        <i class="menu-indicator pull-right"></i>
+                                    </a>
+
+                                    <ul class="tier3 segmenter" style="top: -2px;">
+                                        <li>
+                                            <a href="http://www.dell.com/en-us/shop/monitor-deals/ar/8225?~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forhome-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Home</span>
+
+                                                <p class="text-gray-dark">View all Monitor Deals for Home</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://accessories.us.dell.com/sna/sna.aspx?c=us&amp;l=en&amp;s=bsd&amp;~topic=monitor_deals&amp;~ck=mn">
+                                                <img src="http://i.dell.com/sites/content/DellMicroContent/Responsive_Images/english/_values/mast-forwork-monitors2.png" alt=".">
+
+                                                <span class="caption text-blue">For Work</span>
+
+                                                <p class="text-gray-dark">View all Monitor Deals for Work</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>

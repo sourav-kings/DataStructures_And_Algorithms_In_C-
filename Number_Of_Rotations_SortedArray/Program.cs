@@ -13,6 +13,7 @@ namespace Number_Of_Rotations_SortedArray
             List<int> input = new List<int>();
             input.Add(7);
             input.Add(8);
+            input.Add(9);
             input.Add(1);
             input.Add(2);
             input.Add(3);
@@ -20,8 +21,8 @@ namespace Number_Of_Rotations_SortedArray
             input.Add(5);
             input.Add(6);
 
-            Console.Write("Array is rotated " + findRotationCount(input) + " time(s)");
-            Console.Write("Array is rotated " + findRotationCount2(input) + " time(s)");
+            Console.WriteLine("Array is rotated " + findRotationCount(input) + " time(s)");//Time Complexity : O(n)         //(Using linear search)
+            Console.WriteLine("Array is rotated " + findRotationCount2(input) + " time(s)");//Time Complexity : O(Log n)    //(Efficient Using Binary Search)
         }
         
         static int findRotationCount(List<int> arr)
@@ -55,7 +56,7 @@ namespace Number_Of_Rotations_SortedArray
 
             while ( arr[low] > arr[high] )
             {
-                int mid = low + (high - low) / 2;
+                int mid = (high + low) / 2; //int mid = low + (high - low) / 2;
                 if( arr[mid] > arr[high] )
                     low = mid + 1;
                 else
@@ -78,3 +79,13 @@ namespace Number_Of_Rotations_SortedArray
         }
     }
 }
+
+
+/*
+ 
+     http://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/
+
+    Average Difficulty : 2/5.0
+Based on 1 vote(s)
+     
+     */

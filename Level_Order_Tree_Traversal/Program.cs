@@ -18,7 +18,7 @@ namespace Level_Order_Tree_Traversal
             root.left.right = new Node(5);
 
             Console.WriteLine("Level order traversal of binary tree is ");
-            //printLevelOrder();        // O(n^2)
+            printLevelOrder();        // O(n^2)
             printLevelOrderFaster();    // O(n)
         }
 
@@ -58,7 +58,7 @@ namespace Level_Order_Tree_Traversal
                 return;
             if (level == 1)
                 Console.Write(root.data + " ");
-        else if (level > 1)
+            else if (level > 1)
             {
                 printGivenLevel(root.left, level - 1);
                 printGivenLevel(root.right, level - 1);
@@ -113,3 +113,30 @@ namespace Level_Order_Tree_Traversal
 
 
 //http://www.geeksforgeeks.org/level-order-tree-traversal/
+
+//Average Difficulty : 2.3/5.0
+//Based on 178 vote(s)
+
+
+    /*
+     * Two methods
+     * 
+     * Using Recursion
+     * ---------------
+     * 1.  Get height.
+     * 2.  loop for each int of height and call function with node and index
+     * 3.  Check base case of node ==  null
+     * 4.  if level==1, print node
+     * 5.  if level > 1, recur for left node and (level - 1) and repeat for right node.
+     * 
+     * 
+     * Using Queue (no recusion)
+     * -------------------------
+     * 0.
+     * 1. Declare a Queue object.
+     * 2. Add node to Queue.
+     * 3. Loop until Queue has no data
+     * 4.       Dequeue node and print data
+     * 5.       If left is not null, queue left node. Repeat from right.
+     
+     */

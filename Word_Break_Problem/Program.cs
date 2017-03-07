@@ -72,10 +72,10 @@ namespace Word_Break_Problem
             var res = new List<string>();
             var solution = string.Empty;
 
-            var dp = new List[s.Length + 1];
+            var dp = new List<string>[s.Length + 1];
             for (int i = 0; i < s.Length + 1; i++)
             {
-                dp[i] = new List();
+                dp[i] = new List<string>();
             }
 
             for (int i = 0; i < s.Length; i++)
@@ -97,7 +97,7 @@ namespace Word_Break_Problem
             return res;
         }
 
-        static void Helper(List[] dp, int index, List res, string solution)
+        static void Helper(List<string>[] dp, int index, List<string> res, string solution)
         {
             if (index == 0)
             {
@@ -109,13 +109,15 @@ namespace Word_Break_Problem
             foreach (var list in dp[index])
             {
                 solution = list + " " + solution;
-                this.Helper(dp, index - list.Length, res, solution);
+                Helper(dp, index - list.Length, res, solution);
                 solution = solution.Substring(list.Length + 1);
             }
         }
 
     }
 }
+//Average Difficulty : 3.6/5.0
+//Based on 47 vote(s)
 //https://miafish.wordpress.com/2015/01/20/leetcode-oj-c-word-break/
 
 //http://www.geeksforgeeks.org/dynamic-programming-set-32-word-break-problem/
@@ -123,3 +125,6 @@ namespace Word_Break_Problem
 //https://discuss.leetcode.com/category/147/word-break
 //http://www.programcreek.com/2014/03/leetcode-word-break-ii-java/
 //http://www.ideserve.co.in/learn/word-break-problem
+
+//https://www.youtube.com/watch?v=WepWFGxiwRs&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr&index=20
+//https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/BreakMultipleWordsWithNoSpaceIntoSpace.java

@@ -54,3 +54,5 @@ namespace Minimum_Cost_Path
 
 
 //http://www.geeksforgeeks.org/dynamic-programming-set-6-min-cost-path/
+//Average Difficulty : 2.3/5.0
+//Based on 146 vote(s)

@@ -17,10 +17,15 @@ namespace Check_If_BinaryTree_Is_BST
             root.left.left = new Node(1);
             root.left.right = new Node(3);
 
-            if (isBST())
-                Console.Write("IS BST");
+            if (isBSTUtil(root, int.MinValue, int.MaxValue)) //if (isBST())
+                Console.WriteLine("IS BST");
             else
-                Console.Write("Not a BST");
+                Console.WriteLine("Not a BST");
+
+            //if (isBST())
+            //    Console.Write("IS BST");
+            //else
+            //    Console.Write("Not a BST");
         }
 
         /* can give min and max value according to your code or
@@ -28,11 +33,11 @@ namespace Check_If_BinaryTree_Is_BST
 
         /* returns true if given search tree is binary
          search tree (efficient version) */
-        static bool isBST()
-        {
-            return isBSTUtil(root, int.MinValue,
-                                   int.MaxValue);
-        }
+        //static bool isBST()
+        //{
+        //    return isBSTUtil(root, int.MinValue,
+        //                           int.MaxValue);
+        //}
 
         /* Returns true if the given tree is a BST and its
           values are >= min and <= max. */
@@ -69,3 +74,17 @@ namespace Check_If_BinaryTree_Is_BST
 
     }
 }
+
+//Average Difficulty : 3/5.0
+//Based on 168 vote(s)
+
+    /*
+     * ALGO::
+     * 
+     * 0.
+     * 1. Call bool function with root and min & max variable.
+     * 2. Check base case of node, if null return true.
+     * 3. If node data is less than Min OR more than Max, return false.
+     * 4. Return the AND result of Recur of leftnode & data - 1 and Recur of rightnode & data + 1.
+     * 
+     */

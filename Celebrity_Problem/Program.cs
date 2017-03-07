@@ -147,4 +147,6 @@ namespace Celebrity_Problem
 https://discuss.leetcode.com/topic/23534/java-solution-two-pass
 https://discuss.leetcode.com/topic/25720/java-python-o-n-calls-o-1-space-easy-to-understand-solution
 http://www.geeksforgeeks.org/the-celebrity-problem/
+
+    https://www.youtube.com/watch?v=HZLuk8vulSA&list=PLZiwvbNDGhaUmoFa1JDBD_dblcCCgGWoF&index=4
 */

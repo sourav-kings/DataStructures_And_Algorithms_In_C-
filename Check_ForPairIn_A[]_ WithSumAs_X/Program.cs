@@ -3,7 +3,8 @@ namespace Check_ForPairIn_A_WithSumAs_X
 {
     public class Program
     {
-        //Note: If there are more than one pair having the given sum then the 1st algorithm still reports only one. Can be easily extended for though by 2nd one.
+        //Note: If there are more than one pair having the given sum then the 1st algorithm still reports only one. 
+        //Can be easily extended for though by 2nd one.
         public static void Main()
         {
             int[] A = { 1, 4, 45, 6, 10, 8 };
@@ -108,8 +109,12 @@ namespace Check_ForPairIn_A_WithSumAs_X
                 QuickSort(A, pi + 1, ei);
             }
         }
+        
     }
 }
 
 
 //http://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/
+
+//Average Difficulty : 2.2/5.0
+//Based on 300 vote(s)

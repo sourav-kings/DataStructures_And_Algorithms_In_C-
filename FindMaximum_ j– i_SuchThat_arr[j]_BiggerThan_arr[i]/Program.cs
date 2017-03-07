@@ -19,7 +19,8 @@ namespace FindMaximum__j__i_SuchThat_arr_j__BiggerThan_arr_i_
         }
 
         /* For a given array arr[], returns the maximum j-i such that
-       arr[j] > arr[i] */
+       arr[j] > arr[i] 
+       Time Complexity - O(n*n)*/
         static int maxIndexDiff(int[] arr, int n)
         {
             int maxDiff = -1;
@@ -29,8 +30,10 @@ namespace FindMaximum__j__i_SuchThat_arr_j__BiggerThan_arr_i_
             {
                 for (j = n - 1; j > i; --j)
                 {
-                    if (arr[j] > arr[i] && maxDiff < (j - i))
-                        maxDiff = j - i;
+                    //if (arr[j] > arr[i] && maxDiff < (j - i))
+                    //    maxDiff = j - i;
+                    if (arr[j] > arr[i])
+                        maxDiff = Math.Max(maxDiff, (j - i));                        
                 }
             }
 
@@ -53,7 +56,8 @@ namespace FindMaximum__j__i_SuchThat_arr_j__BiggerThan_arr_i_
         }
 
         /* For a given array arr[], returns the maximum j-i such that
-           arr[j] > arr[i] */
+           arr[j] > arr[i] 
+           Time Complexity - O(n)*/
         static int maxIndexDiffFaster(int[] arr, int n)
         {
             int maxDiff;
@@ -95,3 +99,6 @@ namespace FindMaximum__j__i_SuchThat_arr_j__BiggerThan_arr_i_
 
 
 //http://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/
+
+//Average Difficulty : 3.8/5.0
+//Based on 155 vote(s)

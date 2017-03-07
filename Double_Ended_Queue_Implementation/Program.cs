@@ -17,7 +17,7 @@ namespace Double_Ended_Queue_Implementation
             deque.Push(20);
             deque.Push(30);
 
-            deque.PrintQueue(false);
+            deque.PrintQueue(false);//Deque (Using NEXT): 30->20->10->0->NULL
             deque.Pop();
 
             deque.PrintQueue(false);

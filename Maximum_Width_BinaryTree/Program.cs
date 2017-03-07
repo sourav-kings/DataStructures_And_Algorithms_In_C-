@@ -36,7 +36,7 @@ namespace Maximum_Width_BinaryTree
         /* Function to get the maximum width of a binary tree*/
         static int getMaxWidth(Node node)
         {
-            int width;
+            //int width;
             int h = height(node);
 
             // Create an array that will store count of nodes at each level
@@ -110,3 +110,6 @@ namespace Maximum_Width_BinaryTree
     }
 }
 //http://www.geeksforgeeks.org/maximum-width-of-a-binary-tree/
+
+//Average Difficulty : 2.5/5.0
+//Based on 106 vote(s)

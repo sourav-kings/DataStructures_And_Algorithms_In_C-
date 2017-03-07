@@ -136,3 +136,7 @@ namespace SmallestWindowInString_With_AllChars_Of_AnotherString
 
 //https://discuss.leetcode.com/category/84/minimum-window-substring
 //https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems
+
+
+//Average Difficulty : 4.2/5.0
+//Based on 73 vote(s)

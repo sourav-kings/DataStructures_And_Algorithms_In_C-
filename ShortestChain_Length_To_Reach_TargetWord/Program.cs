@@ -164,3 +164,7 @@ namespace ShortestChain_Length_To_Reach_TargetWord
 //http://www.programcreek.com/2012/12/leetcode-word-ladder/
 //http://www.programcreek.com/2014/06/leetcode-word-ladder-ii-java/
 //http://www.geeksforgeeks.org/length-of-shortest-chain-to-reach-a-target-word/
+
+
+//Average Difficulty : 2.9/5.0
+//Based on 20 vote(s)

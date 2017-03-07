@@ -51,3 +51,6 @@ namespace Trapping_Rain_Water
     }
 }
 //http://www.geeksforgeeks.org/trapping-rain-water/
+
+//Average Difficulty : 3.5/5.0
+//Based on 98 vote(s)

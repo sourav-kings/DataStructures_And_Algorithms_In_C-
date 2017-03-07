@@ -83,3 +83,6 @@ namespace SearchWord_In_2DGrid__Of_Characters
 
 //http://code.geeksforgeeks.org/aw68KG
 //http://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/
+
+//Average Difficulty : 3/5.0
+//Based on 19 vote(s)

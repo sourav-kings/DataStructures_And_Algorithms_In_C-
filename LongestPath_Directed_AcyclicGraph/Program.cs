@@ -159,3 +159,8 @@ namespace LongestPath_Directed_AcyclicGraph
 
 
 }
+
+//http://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/
+//http://www.geeksforgeeks.org/longest-path-directed-acyclic-graph-set-2/
+//Average Difficulty : 4.1/5.0
+//Based on 54 vote(s)

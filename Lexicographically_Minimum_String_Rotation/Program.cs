@@ -43,3 +43,15 @@ namespace Lexicographically_Minimum_String_Rotation
 }
 
 //http://quiz.geeksforgeeks.org/lexicographically-minimum-string-rotation/
+//Average Difficulty : 3.1/5.0
+//Based on 10 vote(s)
+/*
+
+Following is a simple solution. Let the given string be ‘str’
+1) Concatenate ‘str’ with itself and store in a temporary string say ‘concat’.
+2) Create an array of strings to store all rotations of ‘str’. Let the array be ‘arr’.
+3) Find all rotations of ‘str’ by taking substrings of ‘concat’ at index 0, 1, 2..n-1. Store these rotations in arr[]
+4) Sort arr[] and return arr[0]. 
+
+
+ */

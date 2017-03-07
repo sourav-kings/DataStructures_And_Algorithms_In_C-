@@ -98,7 +98,7 @@ What is resource allocation graph and how its related to deadlock,what are the n
  How indexing is done in DB(b-tree and b+trees)
  Views ,types of views its advantages
 
-
+	
  You will be given a floor say(m*n) dimensions and sub rectangles that can fit inside the big rectangle..you have to print the floor plan for given dimensions of small sub rectangles.
 He explained me that it requires construction of SLICING TREE and then printing floor plan. He asked which all the data structures you will use to construct it and asked me think of it.
 
@@ -106,3 +106,26 @@ Ans: I gave him an stack/queue based approach .I told him that i’ll sort the s
 
 
 What all data structures you know.Give the real life examples of when can we use them
+
+What happens when you type www.amazon.com in your Browser .
+
+Discussion on data structure used for dictionary, Hash table vs Trie, collision handling in hash tables.
+
+What is the most funniest and craziest data structure you have ever used.
+
+I said Segment Trees. He asked me to explain it. Why to use it, explain it through some example, prove its complexity.
+
+
+questions on Operating Systems and Computer Networking.
+Operating Systems- Difference between multi -tasking, multi-processing and multiprogramming, Virtual Memory, why to use Virtual memory, issues related to virtual memory , paging, segmentation , multithreading, difference between process and thread.
+Computer Networking- What happens when you type www.amazon.com in Web Browser, how server handle requests, how routing works, difference between HTTP and HTTPS, how TCP works.
+
+
+DBMS related query questions 
+
+question on Paging, Collision Resolving techniques, Page replacement algorithms.
+
+
+ simple question involving unordered map. Then asked me to first implement the map and then use it.
+
+ Several questions on OS (semaphores, mutex, scheduling)

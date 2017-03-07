@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Minimum_Depth_BinaryTree
 {
+    /*
+     * Given a binary tree, find its minimum depth. 
+     * The minimum depth is the number of nodes along the shortest path from root node down to the nearest leaf node.
+     */
     class Program
     {
         //Root of the Binary Tree
@@ -20,13 +24,13 @@ namespace Minimum_Depth_BinaryTree
             root.left.right = new Node(5);
 
             Console.WriteLine("The minimum depth of " +
-              "binary tree is : " + minimumDepth());
+              "binary tree is : " + minimumDepth(root));
         }
 
-        static int minimumDepth()
-        {
-            return minimumDepth(root);
-        }
+        //static int minimumDepth()
+        //{
+        //    return minimumDepth(root);
+        //}
 
         /* Function to calculate the minimum depth of the tree */
         static int minimumDepth(Node root)
@@ -67,3 +71,21 @@ namespace Minimum_Depth_BinaryTree
         }
     }
 }
+
+
+//http://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/
+
+//Average Difficulty : 2.1/5.0
+//Based on 60 vote(s)
+
+    /*
+     * ALGO::
+     * 
+     * 0.
+     * 1. Call int function with node
+     * 2. Check node base case and if true return 0.
+     * 3. If both right and left child nodes are null, return 1.
+     * 4. If only left child  node is null, return 1 + recur with child node. 
+     * 5. If only right child node is null, return 1 + recur with left child node.
+     * 6. Finally, return 1 + MIN of recur of left child node and recur of right child node. 
+     */

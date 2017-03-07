@@ -10,7 +10,7 @@ namespace Unique_Words_From_TwoStrings
     {
         static void Main(string[] args)
         {
-            string firstString = "I am living in india";
+            string firstString = "I am living in beautiful india";
             string secondString = "india is a beautiful country";
 
             HashSet<string> h1 = new HashSet<string>(), h2 = new HashSet<string>();
@@ -54,7 +54,7 @@ namespace Unique_Words_From_TwoStrings
 
             for (int i = 0; i < firstString.Length; i++)
             {
-                if (firstString[i] == ' ' || i == firstString.Length - 1)
+                if (firstString[i] == ' ' || i == firstString.Length - 1)//if a space comes or end of the string comes
                 {
                     if (h1.Count == 0)
                     {

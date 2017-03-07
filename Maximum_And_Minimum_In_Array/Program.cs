@@ -70,3 +70,6 @@ namespace Maximum_And_Minimum_In_Array
 //http://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
 
 //http://www.programcreek.com/2014/02/find-min-max-in-an-array-using-minimum-comparisons/
+
+//Average Difficulty : 2.5/5.0
+//Based on 62 vote(s)

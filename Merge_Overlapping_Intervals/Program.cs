@@ -133,3 +133,6 @@ namespace Merge_Overlapping_Intervals
 //http://www.geeksforgeeks.org/merging-intervals/
 
 //https://miafish.wordpress.com/2015/01/24/leetcode-oj-c-merge-intervals/
+
+//Average Difficulty : 3.3/5.0
+//Based on 74 vote(s)

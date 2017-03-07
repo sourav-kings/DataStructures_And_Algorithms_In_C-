@@ -14,11 +14,11 @@ namespace CountNumber_Of_Occurrences_In_SortedArray
             int x = 3;  // Element to be counted in arr[]
             int n = arr.Length;
             int c = count(arr, x, n);
-            Console.Write(x + " occurs " + c + "times ");
+            Console.Write(x + " occurs " + c + " times ");
         }
 
         /* if x is present in arr[] then returns the count of occurrences of x, 
-   otherwise returns -1. */
+            otherwise returns -1. */
         static int count(int[] arr, int x, int n)
         {
             int i; // index of first occurrence of x in arr[0..n-1]
@@ -75,3 +75,9 @@ namespace CountNumber_Of_Occurrences_In_SortedArray
         }
     }
 }
+
+
+//http://www.geeksforgeeks.org/count-number-of-occurrences-in-a-sorted-array/
+
+//Average Difficulty : 2.6/5.0
+//Based on 73 vote(s)

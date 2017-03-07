@@ -11,6 +11,8 @@ namespace Find_Tour_That_Visits_AllStations
         static void Main(string[] args)
         {
             PetrolPump[] arr = new PetrolPump[] {new PetrolPump(6,4), new PetrolPump(3,6), new PetrolPump(7,3)};
+            //PetrolPump[] arr = new PetrolPump[] { new PetrolPump(4, 6), new PetrolPump(6, 5), new PetrolPump(7, 3), new PetrolPump(4, 5) };
+
 
             int n = arr.Length;
             int start = printTour(arr, n);
@@ -28,21 +30,21 @@ namespace Find_Tour_That_Visits_AllStations
         {
             // Consider first petrol pump as a starting point
             int start = 0;
-                int end = 1;
+            int end = 1;
 
-                int curr_petrol = arr[start].petrol - arr[start].distance;
+            int curr_petrol = arr[start].petrol - arr[start].distance;
  
             /* Run a loop while all petrol pumps are not visited.
               And we have reached first petrol pump again with 0 or more petrol */
-            while (end != start || curr_petrol< 0)
+            while (end != start)         //while (end != start || curr_petrol < 0)
             {
                 // If curremt amount of petrol in truck becomes less than 0, then
                 // remove the starting petrol pump from tour
-                while (curr_petrol< 0 && start != end)
+                while (curr_petrol< 0)          //while (curr_petrol< 0 && start != end)
                 {
                     // Remove starting petrol pump. Change start
                     curr_petrol -= arr[start].petrol - arr[start].distance;
-                    start = (start + 1)%n;
+                    start = (start + 1) % n;
  
                     // If 0 is being considered as start again, then there is no
                     // possible solution
@@ -50,10 +52,10 @@ namespace Find_Tour_That_Visits_AllStations
                        return -1;
                 }
 
-            // Add a petrol pump to current tour
-            curr_petrol += arr[end].petrol - arr[end].distance;
- 
-                end = (end + 1)%n;
+                // Add a petrol pump to current tour
+                curr_petrol += arr[end].petrol - arr[end].distance;
+
+                end = (end + 1) % n;
             }
  
             // Return starting point
@@ -75,3 +77,5 @@ namespace Find_Tour_That_Visits_AllStations
 }
 
 //http://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/
+//Average Difficulty : 3.8/5.0
+//Based on 123 vote(s)
